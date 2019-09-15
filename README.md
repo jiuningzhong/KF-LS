@@ -21,3 +21,4 @@ To add new feature-extraction, machine-learning, or analysis tools to the workbe
 See the appendix in the [Researcher's Manual](http://ankara.lti.cs.cmu.edu/side/LightSide_Researchers_Manual.pdf) for more information, and the core LightSide [plugins repository](https://bitbucket.org/lightsidelabs/genesis-plugins) for examples.
 An example plugin is in plugins/examples.
 
+"# KF-LS" 

@@ -512,7 +512,7 @@ public abstract class GenericLoadPanel extends AbstractListPanel
 		}
 	}
 	
-
+//load new document list
 	protected void loadNewDocumentsFromCSV()
 	{
 		DocumentList testDocs = chooseDocumentList();

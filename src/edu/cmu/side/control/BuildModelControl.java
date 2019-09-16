@@ -207,6 +207,9 @@ public class BuildModelControl extends GenesisControl
 			this.action = action;
 			name = n;
 		}
+		
+		public TrainModelListener()
+		{}
 
 		@Override
 		public void actionPerformed(ActionEvent arg0)
@@ -252,7 +255,7 @@ public class BuildModelControl extends GenesisControl
 
 	}
 
-	protected static FeatureTable prepareTestFeatureTable(Recipe recipe, DocumentList test, StatusUpdater updater)
+	public static FeatureTable prepareTestFeatureTable(Recipe recipe, DocumentList test, StatusUpdater updater)
 	{
 		prepareDocuments(test); // assigns classes, annotations.
 
@@ -366,6 +369,8 @@ public class BuildModelControl extends GenesisControl
 							results = evaluateUsingCachedModel(current, extractTestFeatures, cached, plan);
 						}
 					}
+					
+					
 
 					if (results == null)
 					{

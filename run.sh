@@ -16,9 +16,10 @@ if [[ -z "$1" ]]; then
     export DISPLAY=:0.0
 fi
 
-MAIN_CLASS="edu.cmu.side.Workbench"
+#MAIN_CLASS="edu.cmu.side.Workbench"
+MAIN_CLASS="edu.cmu.side.recipe.PredictionServer"
 
-CLASSPATH="bin:lib/*:lib/xstream/*:wekafiles/packages/chiSquaredAttributeEval/chiSquaredAttributeEval.jar:wekafiles/packages/bayesianLogisticRegression/bayesianLogisticRegression.jar:wekafiles/packages/LibLINEAR/lib/liblinear-java-1.96-SNAPSHOT.jar:wekafiles/packages/LibLINEAR/LibLINEAR.jar:wekafiles/packages/LibSVM/lib/libsvm.jar:wekafiles/packages/LibSVM/LibSVM.jar:plugins/genesis.jar"
+CLASSPATH="bin;lib/*;lib/xstream/*;wekafiles/packages/chiSquaredAttributeEval/chiSquaredAttributeEval.jar;wekafiles/packages/bayesianLogisticRegression/bayesianLogisticRegression.jar;wekafiles/packages/LibLINEAR/lib/liblinear-java-1.96-SNAPSHOT.jar;wekafiles/packages/LibLINEAR/LibLINEAR.jar;wekafiles/packages/LibSVM/lib/libsvm.jar;wekafiles/packages/LibSVM/LibSVM.jar;plugins/genesis.jar"
     
 java $OS_ARGS -Xmx$MAXHEAP $OTHER_ARGS -splash:toolkits/icons/logo.png -classpath $CLASSPATH $MAIN_CLASS $@
 

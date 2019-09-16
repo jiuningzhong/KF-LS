@@ -220,6 +220,39 @@ public class DocumentList implements Serializable
 			addAnnotation(ann, annotations.get(ann), false);
 		}
 	}
+	
+	// wrap a single unannotated plain-text instance as a DocumentList
+	public DocumentList(String annot, String jsonString, String type)
+	{
+
+		List<String> firstColumn = new ArrayList<String>();
+		List<String> secColumn = new ArrayList<String>();
+		List<String> lastColumn = new ArrayList<String>();
+
+		if(annot.equalsIgnoreCase("Complexity_level")){
+			firstColumn.add("");
+			addAnnotation("Complexity_level", firstColumn, false);
+			//secColumn.add(type);
+			//addAnnotation("Complexity_type", secColumn, false);
+		} else if (annot.equalsIgnoreCase("question_type")){
+			firstColumn.add("");
+			addAnnotation("question_type", firstColumn, false);
+		} else if (annot.equalsIgnoreCase("all_type")){
+			firstColumn.add("");
+			addAnnotation("all_type", firstColumn, false);
+		} else if (annot.equalsIgnoreCase("resource_type")){
+			firstColumn.add("");
+			addAnnotation("resource_type", firstColumn, false);			
+		}
+
+		lastColumn.add(jsonString);
+
+		addAnnotation("text", lastColumn, false);
+		setTextColumn("text", true);
+		
+		filenameList.add("Document");
+	}
+
 	// wrap a single unannotated plain-text instance as a DocumentList
 	public DocumentList(String instance)
 	{
@@ -253,21 +286,23 @@ public class DocumentList implements Serializable
                 ArrayList<Integer> blanks = new ArrayList<Integer>();
                 ArrayList<Integer> extras = new ArrayList<Integer>();
                 int lineID = 0;
-
                 try{
                         File f = new File(filename);
-                        if(!f.exists())
-                                f = new File(Workbench.dataFolder.getAbsolutePath(), filename.substring(Math.max(filename.lastIndexOf("/"), filename.lastIndexOf("\\"))+1));
+                        if(!f.exists()){
+                        	 f = new File(Workbench.dataFolder.getAbsolutePath(), filename.substring(Math.max(filename.lastIndexOf("/"), filename.lastIndexOf("\\"))+1));
+                        }                      
                         in = new CSVReader(new FileReader(f));
-                        String[] headers = in.readNextMeaningful();
+                        String[] headers = in.readNextMeaningful();  
+                      
                         List<Integer> annotationColumns = new ArrayList<Integer>();
+                     
                         for(int i = 0; i < headers.length; i++){
                                 headers[i] = headers[i].trim();
+                    
                                 if(headers[i].length()>0){
                                         annotationColumns.add(i);
                                 }
-                        }
-                        
+                        }                                        
                         for(String annotation : headers){
                                 if(annotation.length() > 0 && !allAnnotations.containsKey(annotation)){
                                         allAnnotations.put(annotation, new ArrayList<String>());
@@ -279,9 +314,9 @@ public class DocumentList implements Serializable
                                         }
                                 }
                         }
-
+                    
                         String[] line;
-
+                        
                         while((line = in.readNextMeaningful()) != null){
                                 String[] instance = new String[line.length];
                                 for(int i = 0; i < line.length; i++){
@@ -303,6 +338,7 @@ public class DocumentList implements Serializable
                                 filenameList.add(filename);
                                 lineID++;
                         }
+                        
                         //Now, fill unfilled areas with empty strings
                         Set<String> toRemoveSet = new HashSet<String>(Arrays.asList(headers));
                         Set<String> removedAnnotations = new HashSet<String>(allAnnotations.keySet());
@@ -311,6 +347,7 @@ public class DocumentList implements Serializable
                         Arrays.fill(empty, emptyAnnotationString);
                         for(String emptyAnnotation : removedAnnotations){
                                 allAnnotations.get(emptyAnnotation).addAll(Arrays.asList(empty));
+                                
                         }
                 }catch(Exception e){
                 	
@@ -323,6 +360,13 @@ public class DocumentList implements Serializable
                 totalLines += lineID;
         }
 //      consolidateFileStructures(annotationList);
+		/*for(String key:allAnnotations.keySet()){
+			List<String> listStr = allAnnotations.get(key);
+			
+			System.out.println("KEY: " + key);
+			for(String str:listStr)
+				System.out.println("str: " + str);
+		}*/
         localName.trim();
         setName(localName);
 	}

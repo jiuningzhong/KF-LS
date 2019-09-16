@@ -2,6 +2,7 @@ package edu.cmu.side.view.build;
 
 import java.awt.BorderLayout;
 
+
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
@@ -16,6 +17,8 @@ import javax.swing.JScrollPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+import com.sun.media.jfxmedia.logging.Logger;
+
 import se.datadosen.component.RiverLayout;
 import edu.cmu.side.Workbench;
 import edu.cmu.side.control.BuildModelControl;
@@ -24,6 +27,7 @@ import edu.cmu.side.view.util.AbstractListPanel;
 import edu.cmu.side.view.util.FastListModel;
 import edu.cmu.side.view.util.RadioButtonListEntry;
 import edu.cmu.side.view.util.SelectPluginList;
+
 
 public class BuildPluginPanel extends AbstractListPanel {
 
@@ -35,17 +39,26 @@ public class BuildPluginPanel extends AbstractListPanel {
 	SelectPluginList pluginsList = new SelectPluginList();
 	JScrollPane pluginsScroll = new JScrollPane(pluginsList);
 	BuildActionPanel.NameListener listener;
+	
 	public BuildPluginPanel(BuildActionPanel.NameListener list){
 		setLayout(new BorderLayout());
 		listener = list;
+		
+		//Radio Button List
 		ArrayList<RadioButtonListEntry> pluginsToPass = new ArrayList<RadioButtonListEntry>();
+		
+		//Obtain Learning Plugins
 		Map<LearningPlugin, Boolean> learningPlugins = BuildModelControl.getLearningPlugins();
 		ButtonGroup bg = new ButtonGroup();
+		
+		
 		for(LearningPlugin plug : learningPlugins.keySet()){
 			RadioButtonListEntry entry = new RadioButtonListEntry(plug, learningPlugins.get(plug));
 			pluginsToPass.add(entry);
 			bg.add(entry);
 		}
+		
+		
 		Collections.sort(pluginsToPass, new Comparator<RadioButtonListEntry>(){
 
 			@Override
@@ -58,6 +71,8 @@ public class BuildPluginPanel extends AbstractListPanel {
 		
 		pluginsModel.addAll(pluginsToPass.toArray(new RadioButtonListEntry[0]));
 		pluginsList.setModel(pluginsModel);
+		
+		
 		pluginsList.addListSelectionListener(new ListSelectionListener() {
 			
 			@Override

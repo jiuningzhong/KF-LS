@@ -44,6 +44,7 @@ public abstract class LearningPlugin extends SIDEPlugin implements Serializable
 
 	public abstract boolean supportsClassType(Feature.Type type);
 
+	//Train with evaluation SETTINGS.
 	public TrainingResult train(FeatureTable table, Map<String, String> configuration, Map<String, Serializable> validationSettings, OrderedPluginMap wrappers,
 			StatusUpdater progressIndicator) throws Exception
 	{

@@ -9231,3 +9231,1320 @@ Zero Weights processed. Default weights will be used
 Zero Weights processed. Default weights will be used
 Zero Weights processed. Default weights will be used
 Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 16, 2019 12:44:28 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 12:24:20 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 12:29:29 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 12:59:43 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 12:59:55 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 1:05:14 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 1:05:42 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 1:06:21 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 1:07:49 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 20, 2019 1:08:12 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 3:18:01 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.8779225286325896
+Sep 21, 2019 3:18:01 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.2236726628387582
+getLearner() took 0.0 seconds
+learner.predict took 0.458 seconds
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 3:20:49 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.8779225286325896
+Sep 21, 2019 3:20:49 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.2236726628387582
+getLearner() took 0.0 seconds
+learner.predict took 0.338 seconds
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 6:57:10 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 7:31:26 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+all annotations 
+question_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 7:32:54 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+all annotations 
+question_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 7:33:58 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+all annotations 
+resource_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 7:34:58 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 9:33:20 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.4236824676947927
+Sep 21, 2019 9:33:20 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.2129610799477486
+getLearner() took 0.001 seconds
+learner.predict took 0.034 seconds
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+5
+resource_type
+resource_type_prediction
+resource_type_prediction_L-RF
+resource_type_prediction_L-RS
+text
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 9:37:31 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 1.0453345940203596
+Sep 21, 2019 9:37:31 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.22486356172157163
+getLearner() took 0.0 seconds
+learner.predict took 0.068 seconds
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+5
+question_type
+question_type_prediction
+question_type_prediction_L-QF
+question_type_prediction_L-QS
+text
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 9:46:51 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.9178320052253646
+Sep 21, 2019 9:46:51 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.19080737043354526
+getLearner() took 0.0 seconds
+learner.predict took 0.337 seconds
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 10:48:33 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 10:48:59 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.8779225286325896
+Sep 21, 2019 10:48:59 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.2236726628387582
+getLearner() took 0.0 seconds
+learner.predict took 0.462 seconds
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+6
+all_type
+all_type_prediction
+all_type_prediction_L-I
+all_type_prediction_L-Q
+all_type_prediction_L-R
+text
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 11:26:40 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-3] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-1] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+[pool-3-thread-2] WARN edu.stanford.nlp.process.PTBLexer - Untokenizable: ? (U+FFFD, decimal: 65533)
+results size: 4
+Sep 21, 2019 11:27:39 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.8764210353453955
+Sep 21, 2019 11:27:39 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.16883642652289937
+getLearner() took 0.0 seconds
+learner.predict took 0.249 seconds
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+5
+Complexity_level
+Complexity_level_prediction
+Complexity_level_prediction_L-T
+Complexity_level_prediction_L-X
+text
+^C

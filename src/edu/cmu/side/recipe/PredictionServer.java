@@ -6,6 +6,11 @@ package edu.cmu.side.recipe;
 
 import java.io.File;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -158,7 +163,7 @@ public class PredictionServer implements Container {
 			else if (target.equals("/uploadinput")) {
 				
 				if (request.getMethod().equals("POST")) {
-					System.out.println("combobox entry fetched:"+request.getPart("algo").getContent());
+					
 					answer = handleUploadInputDocument(request, response);
 					if (answer!="")
 					{				
@@ -178,7 +183,6 @@ public class PredictionServer implements Container {
 			else if (target.startsWith("/predicttest")) {
 				
 				if (request.getMethod().equals("POST")) {
-					//System.out.println("combobox entry fetched:"+request.getPart("algo").getContent());
 					answer = handleTestPredict(request, response);
 					if (answer!="")
 					{				
@@ -256,7 +260,6 @@ public class PredictionServer implements Container {
 			int code = response.getCode();
 			if (code != 200) {
 				body.println("HTTP Code " + code);
-				//System.out.println("in ");
 				System.out.println("HTTP Code " + code);
 			}
 
@@ -567,11 +570,7 @@ public class PredictionServer implements Container {
 		else if (algo.equals("logistic"))
 		{
 			Map<String,String> mp=learners[0].generateConfigurationSettings();
-			for(String k:mp.keySet())
-			{
-				System.out.println("key:"+mp.get(k));
-				System.out.println("value:"+mp.get(k));
-			}
+
 			plan=plan.addLearnerToRecipe(plan,(LearningPlugin)learners[0] , learners[0].generateConfigurationSettings());
 			WekaLogit wl = new WekaLogit();
 			plan.setLearnerSettings(wl.generateConfigurationSettings());
@@ -607,12 +606,7 @@ public class PredictionServer implements Container {
 					logger.info("Training new model.");
 					System.out.println("here!");
 					System.out.println("size of learner settings:"+plan.getLearnerSettings().size());
-					for(String a:plan.getLearnerSettings().keySet())
-					{
-						System.out.println("key:"+a);
-						System.out.println("value:"+plan.getLearnerSettings().get(a));
-						
-					}
+					
 					System.out.println(BuildModelControl.getValidationSettings());
 					System.out.println(plan.getWrappers().toString());
 					System.out.println("learner:"+plan.getLearner());
@@ -630,9 +624,21 @@ public class PredictionServer implements Container {
 
 					plan.setLearnerSettings(plan.getLearner().generateConfigurationSettings());
 					plan.setValidationSettings(new TreeMap<String, Serializable>(BuildModelControl.getValidationSettings()));
-					System.out.println("confusion matrix key set"+results.getConfusionMatrix().keySet().size());
-					System.out.println("Evaluation:"+results.getEvaluationTable().getSize());
+					System.out.println("confusion matrix key set: "+results.getConfusionMatrix().keySet().size());
+					System.out.println("Text Confusion Matrix: " + results.getTextConfusionMatrix());
+					System.out.println("Evaluation: "+results.getEvaluationTable().getSize());
 					Map<String, String> allKeys = new TreeMap<String, String>();
+
+					//  Map<String, List<Double>> distributions = results.getDistributions();
+					//  List<Double> values = new ArrayList<Double>();
+					//  for(String s:distributions.keySet()){
+					//  	System.out.println("Key: " + s);
+					//  	values = distributions.get(s);
+					//  	for(Double dis:values){
+					//  		System.out.println("Key: " + s + " Prediction: " + dis);
+					//  	}
+					//  }
+
 						Collection<ModelMetricPlugin> plugins = BuildModelControl.getModelEvaluationPlugins();
 						for(ModelMetricPlugin plugin : plugins){
 							Map<String, String> evaluations = plugin.evaluateModel(results, plugin.generateConfigurationSettings());
@@ -655,28 +661,21 @@ public class PredictionServer implements Container {
 					
 					for (String key : allKeys.keySet()) {
 						mapAsString.append(key + "=" + allKeys.get(key) + ", ");
+						if (key.equals("Accuracy"))
+						{
+							accuracy=allKeys.get(key);
+						}
 					}
 
 					mapAsString.append("}");
 
-					System.out.println(mapAsString);
-					for(String s:allKeys.keySet())
-					{	if (s.equals("Accuracy"))
-						{
-							accuracy=allKeys.get(s);
-						}
-					}
-					
+					System.out.println(mapAsString);				
 				}
 			}
 		}
 		catch (Exception e)
 		{
 			System.out.println(e.getMessage());
-			
-			System.out.println(e.toString());
-			
-			System.out.println(e.getLocalizedMessage());
 			plan = null;
 			
 		}		
@@ -694,42 +693,44 @@ public class PredictionServer implements Container {
 		ObjectMapper objectMapper = new ObjectMapper();
 		ResponseJson rj = classifyPrediction(request, response, annot);	
 
-		ResponseJson rsj  = classifyPrediction(request, response, rj.getPredicted());
+		if(!rj.getPredicted().equals("Insufficient Data")){
+			ResponseJson rsj  = classifyPrediction(request, response, rj.getPredicted());
 
-		ResponseJson rsjXT = null;
-		if(rsj.getPredicted().equals("L-X")||rsj.getPredicted().equals("L-T"))
-			rsjXT = classifyPrediction(request, response, rsj.getPredicted());
-
-		
-		
-		System.out.println("--- Start Prediction of all_type---");
-	
-		System.out.println("Accuracy:   " + rj.getAccuracy());		
-		System.out.println("Level: 		" + rj.getLevel());	
-		System.out.println("Prediction: " + rj.getPredicted());
-		
-		System.out.println("--- End	  Prediction of all_type---");	
-		
-		System.out.println("--- Start Prediction of " + rsj.getPredicted() + "---");
-		
-		System.out.println("Accuracy:   " + rsj.getAccuracy());		
-		System.out.println("Level: 		" + rsj.getLevel());	
-		System.out.println("Prediction: " + rsj.getPredicted());
-		
-		System.out.println("--- End	  Prediction of " + rsj.getPredicted() + "---");
-		
-		if(rsjXT==null)
-			jsonStr = objectMapper.writeValueAsString(rsj);
-		else{
-			jsonStr = objectMapper.writeValueAsString(rsjXT);
+			ResponseJson rsjXT = null;
+			if(rsj.getPredicted().equals("L-X")||rsj.getPredicted().equals("L-T"))
+				rsjXT = classifyPrediction(request, response, rsj.getPredicted());	
 			
-			System.out.println("--- Start Prediction of " + rsjXT.getPredicted() + "---");
+			System.out.println("--- Start Prediction of all_type---");
+		
+			System.out.println("Accuracy:   " + rj.getAccuracy());		
+			System.out.println("Level: 		" + rj.getLevel());	
+			System.out.println("Prediction: " + rj.getPredicted());
 			
-			System.out.println("Accuracy:   " + rsjXT.getAccuracy());		
-			System.out.println("Level: 		" + rsjXT.getLevel());	
-			System.out.println("Prediction: " + rsjXT.getPredicted());
+			System.out.println("--- End	  Prediction of all_type---");	
 			
-			System.out.println("--- End	  Prediction of " + rsjXT.getPredicted() + "---");
+			System.out.println("--- Start Prediction of " + rsj.getPredicted() + "---");
+			
+			System.out.println("Accuracy:   " + rsj.getAccuracy());		
+			System.out.println("Level: 		" + rsj.getLevel());	
+			System.out.println("Prediction: " + rsj.getPredicted());
+			
+			System.out.println("--- End	  Prediction of " + rsj.getPredicted() + "---");
+			
+			if(rsjXT==null)
+				jsonStr = objectMapper.writeValueAsString(rsj);
+			else{
+				jsonStr = objectMapper.writeValueAsString(rsjXT);
+				
+				System.out.println("--- Start Prediction of " + rsjXT.getPredicted() + "---");
+				
+				System.out.println("Accuracy:   " + rsjXT.getAccuracy());		
+				System.out.println("Level: 		" + rsjXT.getLevel());	
+				System.out.println("Prediction: " + rsjXT.getPredicted());
+				
+				System.out.println("--- End	  Prediction of " + rsjXT.getPredicted() + "---");
+			}
+		}else{
+			jsonStr = objectMapper.writeValueAsString(rj);
 		}
 		System.out.println("json: " + jsonStr);
 		return jsonStr;
@@ -743,13 +744,15 @@ public class PredictionServer implements Container {
 		String predictedLabel = ""; //request.getPart("prediction_column").getContent();
 		ResponseJson rJson = null;
 		
+		// idea statements
 		if(annot.equals("L-I"))
 		{
-			train_file="Train_KF.csv";
+			train_file="Train_KF2.csv";
 			algo="logistic";
 			predictedLabel = "Complexity_level";
 			annot = "Complexity_level";
 		}
+		// questions
 		else if(annot.equals("L-Q"))
 		{
 			train_file="Train_question.csv";
@@ -757,6 +760,7 @@ public class PredictionServer implements Container {
 			predictedLabel = "question_type";
 			annot="question_type";
 		}
+		// all types
 		else if(annot.equals("all_type"))
 		{
 			//0.6288659793814433
@@ -765,19 +769,24 @@ public class PredictionServer implements Container {
 			predictedLabel = "all_type";
 			annot="all_type";
 		}
+		// resources
 		else if(annot.equals("L-R"))
 		{
 			train_file="Train_resource.csv";
 			algo="logistic";
 			predictedLabel = "resource_type";
 			annot="resource_type";
-		}else if(annot.equals("L-X"))
+		}
+		// explanations
+		else if(annot.equals("L-X"))
 		{
 			train_file="Train_KF_X.csv";
 			algo="logistic";
 			predictedLabel = "Complexity_level";
 			annot = "Complexity_level";
-		}else if(annot.equals("L-T"))
+		}
+		// facts
+		else if(annot.equals("L-T"))
 		{
 			train_file="Train_KF_T.csv";
 			algo="logistic";
@@ -785,11 +794,11 @@ public class PredictionServer implements Container {
 			annot = "Complexity_level";
 		}
 
-		System.out.println("annot:"+annot);
+		System.out.println("annot: "+annot);
 
-		System.out.println("predictedLabel:"+predictedLabel);
+		System.out.println("predictedLabel: "+predictedLabel);
 
-		System.out.println("algo:"+algo);
+		System.out.println("algo: "+algo);
 		final String destpath = Workbench.dataFolder.getAbsolutePath();
 		File f= new File(destpath+"/"+train_file);
 		System.out.println("Training file dir: "+destpath+"/"+train_file);
@@ -922,7 +931,7 @@ public class PredictionServer implements Container {
 			List<Recipe> rplist=new ArrayList<Recipe>(recipelist);
 			Recipe trainedModel= rplist.get(rplist.size()-1);
 			boolean useEvaluation=false;
-			boolean showDists=false;
+			boolean showDists=true;
 			boolean overwrite=false;
 			DocumentList originalDocs;
 			DocumentList newDocs = null;
@@ -931,61 +940,118 @@ public class PredictionServer implements Container {
 			
 			final Query query = request.getQuery();
 			String requestID = "", jsonString = "", typeString = "";
-			if( query != null ){
-				requestID = (String) query.get("requestID");
-				jsonString = (String) query.get("jsonString");
-				// if(query.get("typeString")==null)
-				// 	typeString = "";
-				// else				
-				// 	typeString = (String) query.get("typeString");				
-				System.out.println("query requestID: " + requestID);
-				System.out.println("query JSON: " + jsonString);		
-				System.out.println("query Complexity_type: " + typeString);
-			}
-
-			if( request.getPart("requestID") != null ){
-				requestID = request.getPart("requestID").getContent();				
-				System.out.println("requestID: " + requestID);
-				jsonString = request.getPart("jsonStr").getContent();
-				System.out.println("JSON: " + jsonString);				
-				typeString = request.getPart("Complexity_type").getContent();
-				System.out.println("Complexity_type: " + typeString);
-			}
-			System.out.println("annot: " + annot);
-			System.out.println("recipelist size: " + recipelist.size());			
+						
 			
 			try
-			{				
+			{		
+				if( query != null ){
+					requestID = (String) query.get("requestID");
+					jsonString = (String) query.get("jsonString");
+					// if(query.get("typeString")==null)
+					// 	typeString = "";
+					// else				
+					// 	typeString = (String) query.get("typeString");				
+					System.out.println("query requestID: " + requestID);
+					System.out.println("query JSON: " + jsonString);		
+					System.out.println("query Complexity_type: " + typeString);
+				}
+	
+				if( request.getPart("requestID") != null ){
+					requestID = request.getPart("requestID").getContent();				
+					System.out.println("requestID: " + requestID);
+					jsonString = request.getPart("jsonStr").getContent();
+					//jsonString = preprocessRawString(request.getPart("jsonStr").getContent());
+	
+					System.out.println("JSON: " + jsonString);				
+					// typeString = request.getPart("Complexity_type").getContent();
+					// System.out.println("Complexity_type: " + typeString);
+				}
+				System.out.println("annot: " + annot);
+				System.out.println("recipelist size: " + recipelist.size());
+
 				//creating a document list and setting all the required parameters for feature extraction
 				//originalDocs = new DocumentList(testfiles);
-				originalDocs = new DocumentList(annot, jsonString, typeString);
 				
-				originalDocs.setTextColumn("text", true);
+				// json string must either be a url
+				// or sentence has more than two words
+				if( (jsonString.contains(" ")&&jsonString.split(" ").length>2)
+					|| (!jsonString.contains(" ")&&jsonString.contains("http")) ) {
+					originalDocs = new DocumentList(annot, jsonString, typeString);
+					
+					originalDocs.setTextColumn("text", true);
 
-				Predictor predictor = new Predictor(trainedModel, name);
-				newDocs = predictor.predict(originalDocs, name, showDists, overwrite);
-				
-				String[] a=newDocs.getAnnotationNames();
-				Map<String, List<String>> allAnnotations = newDocs.allAnnotations();
-				System.out.println("columns of new doc:");
-				for(String q:a)	
-				{
-					System.out.println(q);
+					Predictor predictor = new Predictor(trainedModel, name);
+					// set "show distribution" to be true
+					newDocs = predictor.predict(originalDocs, name, showDists, overwrite);
+					
+					String[] a=newDocs.getAnnotationNames();
+					Map<String, List<String>> allAnnotations = newDocs.allAnnotations();
+
+					// get distribution
+					String key1="", key2 = "";
+					for(String s:allAnnotations.keySet()){
+						// if(allAnnotations.get(s)!=null)
+						// if(s.equals("all_type"))
+						// 	continue;
+						System.out.println("Key: " + s + " values: " + allAnnotations.get(s).get(0));
+						if(!s.equals(predictedLabel)&&!s.equals("PredictedTestData")&&key1.equals(""))
+							key1 = s;
+
+						if(!s.equals(predictedLabel)&&!s.equals("PredictedTestData")
+							&&!key1.equals("")&&!key1.equals(s)&&key2.equals(""))
+							key2 = s;
+					}
+
+					List<String> level = allAnnotations.get(predictedLabel);
+					List<String> predicted = allAnnotations.get("PredictedTestData");
+					List<String> key1Str = allAnnotations.get(key1);
+					List<String> key2Str = allAnnotations.get(key2);
+
+					// manual classification
+					if(!predicted.get(0).contains("L-R") && jsonString.contains("http"))
+						predicted.set(0, "L-R");
+
+					// manual question classification
+					// filter "Train_question.csv (question_type_prediction).csv" by "PredictedTestData_L-Q" column
+					String predictedLQ = "PredictedTestData_L-Q";
+					if(allAnnotations.keySet().contains(predictedLQ)) {
+						double lq = Double.parseDouble(allAnnotations.get(predictedLQ).get(0));
+						if(lq > 0.35) {
+							predicted.set(0, "L-Q");
+						}
+						// if(key1.equals(predictedLQ)){
+						// 	key1Str.set(0, lq);
+						// }else if(key2.equals(predictedLQ)){
+						// 	key2Str.set(0, lq);
+						// }
+					}
+					
+					String predictedLR = "PredictedTestData_L-R";
+					// filter "ComplexityPrediction -train resource.csv" by "PredictedTestData_L-R" column
+					if(allAnnotations.keySet().contains(predictedLR)) {
+						double lq = Double.parseDouble(allAnnotations.get(predictedLR).get(0));
+						if(lq > 0.24) {
+							predicted.set(0, "L-R");
+						}
+						// if(key1.equals(predictedLR)){
+
+						// }else if(key2.equals(predictedLR)){
+
+						// }
+					}
+
+					System.out.println("key1: "+ key1 + " key2: "+key2);
+					System.out.println("key1 value: "+allAnnotations.get(key1).get(0) + " key2 value: "+allAnnotations.get(key2).get(0));
+					rJson = new ResponseJson(requestID, predicted.get(0), level.get(0), jsonStr, key1, key2, key1Str.get(0), key2Str.get(0));
+
+				}else {
+					rJson = new ResponseJson(requestID, "Insufficient Data", "", jsonStr, "", "", "", "");
 				}
-
-				List<String> level = allAnnotations.get(predictedLabel);
-				List<String> predicted = allAnnotations.get("PredictedTestData");
-				for(String str:predicted){
-					System.out.println("predicted: " + str);
-				}
-				
-				if(!predicted.get(0).contains("L-R") && jsonString.contains("http"))
-					predicted.set(0, "L-R");
-
-				rJson = new ResponseJson(requestID, predicted.get(0), level.get(0), jsonStr);
 			}
 			catch(Exception e)
 			{
+				System.out.println(e.getMessage());
+				e.printStackTrace();
 				ex = e;				
 			}
 			
@@ -999,6 +1065,20 @@ public class PredictionServer implements Container {
 			// Workbench.getRecipeManager().addRecipe(trainedModel);
 			
 			return rJson;
+	}
+
+	protected String preprocessRawString(String jsonStr) throws IOException {
+		String rtn = "";
+		final String destpath = Workbench.dataFolder.getAbsolutePath();
+
+		List<String> stopwords = Files.readAllLines(Paths.get(destpath + File.separator + "nlp_en_stop_words.txt"));
+		
+		ArrayList<String> allWords = Stream.of(jsonStr.toLowerCase().split(" ")).collect(Collectors.toCollection(ArrayList<String>::new));
+		allWords.removeAll(stopwords);
+
+		rtn = allWords.stream().collect(Collectors.joining(" "));
+
+		return rtn;
 	}
 	
 	protected String handleUpload(Request request, Response response) throws IOException, FileNotFoundException {

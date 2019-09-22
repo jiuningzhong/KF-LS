@@ -9,19 +9,59 @@ public class ResponseJson implements Serializable
     String predicted;
     String level;
     String accuracy;
+    String key1;
+    String key2;
+    String predictionConfidence1;
+    String predictionConfidence2;
 
     public ResponseJson(){
 
     }
 
-    public ResponseJson(String requestID, String predicted, String level, String accuracy){
+    public ResponseJson(String requestID, String predicted, String level, String accuracy, String key1, String key2, String predictionConfidence1, String predictionConfidence2){
         this.requestID = requestID;
         this.level = level;
         this.predicted = predicted;
         this.accuracy = accuracy;
-    }
+        this.key1 = key1;
+        this.key2 = key2;
+        this.predictionConfidence1 = predictionConfidence1;
+        this.predictionConfidence2 = predictionConfidence2;
+    }   
+    
+    public String getKey1() {
+		return key1;
+	}
 
-    public void setRequestID(String requestID)
+	public void setKey1(String key1) {
+		this.key1 = key1;
+	}
+
+	public String getKey2() {
+		return key2;
+	}
+
+	public void setKey2(String key2) {
+		this.key2 = key2;
+	}
+
+	public String getPredictionConfidence2() {
+		return predictionConfidence2;
+	}
+
+	public void setPredictionConfidence2(String predictionConfidence2) {
+		this.predictionConfidence2 = predictionConfidence2;
+	}
+
+	public String getPredictionConfidence1() {
+		return predictionConfidence1;
+	}
+
+	public void setPredictionConfidence1(String predictionConfidence1) {
+		this.predictionConfidence1 = predictionConfidence1;
+	}
+
+	public void setRequestID(String requestID)
     {
         this.requestID = requestID;
     }

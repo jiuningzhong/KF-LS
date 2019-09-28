@@ -320,7 +320,10 @@ public class DocumentList implements Serializable
                         while((line = in.readNextMeaningful()) != null){
                                 String[] instance = new String[line.length];
                                 for(int i = 0; i < line.length; i++){
-                                        instance[i] = line[i].replaceAll("[^\r\n\\p{ASCII}]", "");
+									// if(!line[i].contains("PredictedTestData"))
+									// 	instance[i] = line[i].replaceAll("[^\r\n\\p{ASCII}]", "").toLowerCase();
+									// else
+										instance[i] = line[i].replaceAll("[^\r\n\\p{ASCII}]", "").replaceAll("[^a-zA-Z- ]", "");
                                 }
                                 for(int i = 0; i < instance.length; i++){
                                         String value = instance[i];
@@ -360,13 +363,13 @@ public class DocumentList implements Serializable
                 totalLines += lineID;
         }
 //      consolidateFileStructures(annotationList);
-		/*for(String key:allAnnotations.keySet()){
-			List<String> listStr = allAnnotations.get(key);
+		// for(String key:allAnnotations.keySet()){
+		// 	List<String> listStr = allAnnotations.get(key);
 			
-			System.out.println("KEY: " + key);
-			for(String str:listStr)
-				System.out.println("str: " + str);
-		}*/
+		// 	System.out.println("KEY: " + key);
+		// 	for(String str:listStr)
+		// 		System.out.println("str: " + str);
+		// }
         localName.trim();
         setName(localName);
 	}

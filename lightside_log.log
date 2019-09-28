@@ -10547,4 +10547,346 @@ Complexity_level_prediction
 Complexity_level_prediction_L-T
 Complexity_level_prediction_L-X
 text
+^CSun 09/22/2019  3:22:34.69
+Sep 22, 2019 3:22:38 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Sep 22, 2019 3:22:38 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/Jiuning/Documents/Python%20Scripts/LightSideWB/lib/slf4j-log4j12-1.7.26.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/Jiuning/Documents/Python%20Scripts/LightSideWB/lib/slf4j-simple-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (edu.stanford.nlp.tagger.maxent.MaxentTagger).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+results size: 4
+Sep 22, 2019 3:23:39 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+java.lang.Exception: User Canceled
+	edu.cmu.side.plugin.LearningPlugin.evaluateCrossValidation(LearningPlugin.java:355)
+	edu.cmu.side.plugin.LearningPlugin.train(LearningPlugin.java:109)
+	edu.cmu.side.control.BuildModelControl$BuildModelTask.doTask(BuildModelControl.java:378)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	javax.swing.SwingWorker.run(SwingWorker.java:334)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+
+	at edu.cmu.side.plugin.LearningPlugin.evaluateCrossValidation(LearningPlugin.java:355)
+	at edu.cmu.side.plugin.LearningPlugin.train(LearningPlugin.java:109)
+	at edu.cmu.side.control.BuildModelControl$BuildModelTask.doTask(BuildModelControl.java:378)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Sep 22, 2019 3:23:47 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+results size: 4
+Sep 22, 2019 3:24:07 AM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.8764210353453955
+Sep 22, 2019 3:24:07 AM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.16883642652289937
+getLearner() took 0.0 seconds
+learner.predict took 0.557 seconds
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+5
+Complexity_level
+Complexity_level_prediction
+Complexity_level_prediction_L-T
+Complexity_level_prediction_L-X
+text
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 23, 2019 12:10:50 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 23, 2019 12:12:12 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 23, 2019 12:53:10 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 23, 2019 12:53:25 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+itemsstatechanged eva; 	Total Hits
+itemsstatechanged eva; 	Total Hits
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=false, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 24, 2019 12:08:06 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=false, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 24, 2019 12:08:18 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+results size: 4
+Sep 24, 2019 12:08:29 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
 ^C

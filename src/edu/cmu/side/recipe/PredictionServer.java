@@ -5,12 +5,6 @@
 package edu.cmu.side.recipe;
 
 import java.io.File;
-
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -18,7 +12,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.io.Serializable;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -36,11 +29,14 @@ import java.util.TreeMap;
 import java.util.Vector;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
-import java.util.logging.Logger;
+import java.util.logging.FileHandler;
+import java.util.logging.Formatter;
 import java.util.logging.Level;
-
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import javax.swing.JOptionPane;
-
 import org.simpleframework.http.Part;
 import org.simpleframework.http.Query;
 import org.simpleframework.http.Request;
@@ -50,19 +46,19 @@ import org.simpleframework.http.core.ContainerServer;
 import org.simpleframework.transport.Server;
 import org.simpleframework.transport.connect.Connection;
 import org.simpleframework.transport.connect.SocketConnection;
-
-
-
-
+import com.fasterxml.jackson.core.type.TypeReference;
+//import com.fasterxml.jackson.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.cmu.side.Workbench;
-import edu.cmu.side.control.ExtractFeaturesControl;
-import edu.cmu.side.control.PredictLabelsControl;
+import edu.cmu.side.control.BuildModelControl;
 import edu.cmu.side.model.Recipe;
 import edu.cmu.side.model.RecipeManager;
 import edu.cmu.side.model.StatusUpdater;
 import edu.cmu.side.model.data.DocumentList;
 import edu.cmu.side.model.data.FeatureTable;
 import edu.cmu.side.model.data.PredictionResult;
+import edu.cmu.side.model.data.ResponseJson;
+import edu.cmu.side.model.data.TrainingResult;
 import edu.cmu.side.model.feature.Feature;
 import edu.cmu.side.model.feature.Feature.Type;
 import edu.cmu.side.model.feature.FeatureHit;
@@ -70,28 +66,15 @@ import edu.cmu.side.plugin.FeaturePlugin;
 import edu.cmu.side.plugin.LearningPlugin;
 import edu.cmu.side.plugin.ModelMetricPlugin;
 import edu.cmu.side.plugin.SIDEPlugin;
-import edu.cmu.side.plugin.WrapperPlugin;
 import edu.cmu.side.plugin.control.PluginManager;
+import edu.cmu.side.util.MyHtmlFormatter;
 import edu.cmu.side.view.util.CSVExporter;
 import edu.cmu.side.view.util.DocumentListTableModel;
-import edu.cmu.side.view.util.ParallelTaskUpdater;
-import edu.cmu.side.view.util.RadioButtonListEntry;
 import edu.cmu.side.view.util.SwingUpdaterLabel;
 import plugins.features.BasicFeatures;
-import plugins.features.CharacterNGrams;
 import plugins.features.ColumnFeatures;
-import weka.classifiers.bayes.NaiveBayes;
 import plugins.learning.WekaBayes;
 import plugins.learning.WekaLogit;
-import plugins.learning.WekaSVM;
-import edu.cmu.side.control.BuildModelControl;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-//import com.fasterxml.jackson.*;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.annotation.ObjectIdResolver;
-
-import edu.cmu.side.model.data.*;
 
 
 
@@ -104,6 +87,13 @@ import edu.cmu.side.model.data.*;
  */
 
 public class PredictionServer implements Container {
+
+    static private FileHandler fileTxt;
+    static private SimpleFormatter formatterTxt;
+
+    static private FileHandler fileHTML;
+    static private Formatter formatterHTML;
+    
 	protected static Map<String, Predictor> predictors = new HashMap<String, Predictor>();
 
 	private final Executor executor;
@@ -120,6 +110,19 @@ public class PredictionServer implements Container {
 		connection.connect(address);
 		logger.setLevel(Level.OFF);
 		logger.info("Started server on port " + port + ".");
+		
+		fileTxt = new FileHandler("Logging.txt");
+        fileHTML = new FileHandler("Logging.html");
+
+        // create a TXT formatter
+        formatterTxt = new SimpleFormatter();
+        fileTxt.setFormatter(formatterTxt);
+        logger.addHandler(fileTxt);
+
+        // create an HTML formatter
+        formatterHTML = new MyHtmlFormatter();
+        fileHTML.setFormatter(formatterHTML);
+        logger.addHandler(fileHTML);
 	}
 
 	@Override
@@ -561,7 +564,11 @@ public class PredictionServer implements Container {
 	
 		Map<LearningPlugin, Boolean> learningPlugins;
 		SIDEPlugin[] learners = PluginManager.getSIDEPluginArrayByType("model_builder");
-		
+				
+		for(SIDEPlugin l:learners) {
+			System.out.println(l.getAboutMap().get("title") + " " + l.getAboutMap().get("version"));
+		}
+
 		if (algo.equalsIgnoreCase("naive"))
 		{
 			plan=plan.addLearnerToRecipe(plan,(LearningPlugin)learners[2] , learners[2].generateConfigurationSettings());

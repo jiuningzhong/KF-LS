@@ -134,7 +134,7 @@ public abstract class ParallelFeaturePlugin extends FeaturePlugin {
 			ExecutorService pool = ThreadPoolManager.getThreadPool();
 			List<Future<Collection<FeatureHit>>> results = pool.invokeAll(tasks);
 
-			System.out.println("results size: " + results.size());
+			// System.out.println("results size: " + results.size());
 
 			for (Future<Collection<FeatureHit>> result : results) {
 				allHits.addAll(result.get());

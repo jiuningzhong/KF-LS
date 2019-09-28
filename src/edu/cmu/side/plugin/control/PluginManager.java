@@ -83,6 +83,7 @@ public class PluginManager {
 		Collection<PluginWrapper> pluginWrapperCollection =  getSharedPluginManager().getPluginTypeMap().get(type);
 		for(PluginWrapper pluginWrapper : pluginWrapperCollection){
 			SIDEPlugin sidePlugin = pluginWrapper.getSIDEPlugin();
+			System.out.print("pluginWrapper: " + pluginWrapper.toString());
 			sidePluginList.add(sidePlugin);
 		}
 		return sidePluginList.toArray(new SIDEPlugin[0]);

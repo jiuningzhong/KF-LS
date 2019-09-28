@@ -15,7 +15,7 @@ To build with Chinese support, use
     ant build-intl
 
 This will compile the workbench and run a modest set of unit tests. 
-After that, you can run LightSide by executing run.sh (Linux, Mac) or LightSIDE.bat (Windows)
+After that, you can run LightSide by executing run-linux.sh (Linux, Mac) or run-win.sh/LightSIDE.bat (Windows)
 
 To add new feature-extraction, machine-learning, or analysis tools to the workbench, you'll want to write a plugin. 
 See the appendix in the [Researcher's Manual](http://ankara.lti.cs.cmu.edu/side/LightSide_Researchers_Manual.pdf) for more information, and the core LightSide [plugins repository](https://bitbucket.org/lightsidelabs/genesis-plugins) for examples.

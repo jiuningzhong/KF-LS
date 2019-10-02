@@ -18,8 +18,10 @@ import java.net.SocketAddress;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -75,6 +77,7 @@ import plugins.features.BasicFeatures;
 import plugins.features.ColumnFeatures;
 import plugins.learning.WekaBayes;
 import plugins.learning.WekaLogit;
+import plugins.learning.WekaSVM;
 
 
 
@@ -561,14 +564,9 @@ public class PredictionServer implements Container {
 	
 	public String handleBuildModel(Recipe plan,String algo) {
 		String accuracy="";
-	
-		Map<LearningPlugin, Boolean> learningPlugins;
-		SIDEPlugin[] learners = PluginManager.getSIDEPluginArrayByType("model_builder");
-				
-		for(SIDEPlugin l:learners) {
-			System.out.println(l.getAboutMap().get("title") + " " + l.getAboutMap().get("version"));
-		}
 
+		SIDEPlugin[] learners = PluginManager.getSIDEPluginArrayByType("model_builder");
+		
 		if (algo.equalsIgnoreCase("naive"))
 		{
 			plan=plan.addLearnerToRecipe(plan,(LearningPlugin)learners[2] , learners[2].generateConfigurationSettings());
@@ -578,18 +576,15 @@ public class PredictionServer implements Container {
 		}
 		else if (algo.equalsIgnoreCase("logistic"))
 		{
-			Map<String,String> mp=learners[0].generateConfigurationSettings();
-
 			plan=plan.addLearnerToRecipe(plan,(LearningPlugin)learners[0] , learners[0].generateConfigurationSettings());
 			WekaLogit wl = new WekaLogit();
 			plan.setLearnerSettings(wl.generateConfigurationSettings());
-
-			
-			Map<String, String> logisticSetting = wl.getAboutMap();
-			
-			for(String s:logisticSetting.keySet()) {
-				logger.info("LOGISTIC KEY: " + s + " value: " + logisticSetting.get(s));
-			}
+		}
+		else if (algo.equalsIgnoreCase("svm"))
+		{
+			plan=plan.addLearnerToRecipe(plan,(LearningPlugin)learners[1] , learners[1].generateConfigurationSettings());
+			WekaSVM wl = new WekaSVM();
+			plan.setLearnerSettings(wl.generateConfigurationSettings());
 		}
 		
 		if (algo.equalsIgnoreCase("naive"))
@@ -737,8 +732,10 @@ public class PredictionServer implements Container {
 			
 			logger.info("--- End	  Prediction of " + rsj.getPredicted() + "---");
 			
-			if(rsjXT==null)
+			if(rsjXT==null) {
 				jsonStr = objectMapper.writeValueAsString(rsj);
+				writeToDB(rsj);
+			}
 			else{
 				jsonStr = objectMapper.writeValueAsString(rsjXT);
 				
@@ -749,9 +746,11 @@ public class PredictionServer implements Container {
 				logger.info("Prediction: " + rsjXT.getPredicted());
 				
 				logger.info("--- End	  Prediction of " + rsjXT.getPredicted() + "---");
+				writeToDB(rsjXT);
 			}
 		}else{
 			jsonStr = objectMapper.writeValueAsString(rj);
+			writeToDB(rj);
 		}
 		logger.info("json: " + jsonStr);
 		return jsonStr;
@@ -769,7 +768,6 @@ public class PredictionServer implements Container {
 		if(annot.equalsIgnoreCase("L-I"))
 		{
 			train_file="Train_KF2.csv";
-			algo="logistic";
 			predictedLabel = "Complexity_level";
 			annot = "Complexity_level";
 		}
@@ -777,7 +775,6 @@ public class PredictionServer implements Container {
 		else if(annot.equalsIgnoreCase("L-Q"))
 		{
 			train_file="Train_question.csv";
-			algo="logistic";
 			predictedLabel = "question_type";
 			annot="question_type";
 		}
@@ -786,7 +783,6 @@ public class PredictionServer implements Container {
 		{
 			//0.6288659793814433
 			train_file="Train_three_types.csv";
-			algo="logistic";
 			predictedLabel = "all_type";
 			annot="all_type";
 		}
@@ -794,7 +790,6 @@ public class PredictionServer implements Container {
 		else if(annot.equalsIgnoreCase("L-R"))
 		{
 			train_file="Train_resource.csv";
-			algo="logistic";
 			predictedLabel = "resource_type";
 			annot="resource_type";
 		}
@@ -802,7 +797,6 @@ public class PredictionServer implements Container {
 		else if(annot.equalsIgnoreCase("L-X"))
 		{
 			train_file="Train_KF_X.csv";
-			algo="logistic";
 			predictedLabel = "Complexity_level";
 			annot = "Complexity_level";
 		}
@@ -810,7 +804,6 @@ public class PredictionServer implements Container {
 		else if(annot.equalsIgnoreCase("L-T"))
 		{
 			train_file="Train_KF_T.csv";
-			algo="logistic";
 			predictedLabel = "Complexity_level";
 			annot = "Complexity_level";
 		}
@@ -856,7 +849,7 @@ public class PredictionServer implements Container {
 			FeaturePlugin c = new ColumnFeatures();
 			Collection<FeaturePlugin> plugins = new HashSet<FeaturePlugin>();
 			plugins.add(b);
-			if(algo.equalsIgnoreCase("logistic"))
+			if(algo.equalsIgnoreCase("logistic") || algo.equalsIgnoreCase("svm"))
 			{
 				plugins.add(c);
 			}
@@ -898,6 +891,19 @@ public class PredictionServer implements Container {
 					//if (type&&annot.equalsIgnoreCase("Complexity_level"))
 					//	plugin_config_log.put("Complexity_type", "NOMINAL");
 					//plugin_config_log.put("E: Evidence", "NOMINAL");
+					plan.addExtractor(c, plugin_config_log);
+				}
+	        	else if (algo.equalsIgnoreCase("svm"))
+				{
+	        		map1 = mapper.readValue(new File(destpath+
+		                    "/Complexity.json"), new TypeReference<Map<String, Object>>() {
+		            }); 
+	        		for(String w:map1.keySet())
+	        		{
+	        			plugin_config_naive.put(w, map1.get(w).toString());
+	        		}
+	        		plan.addExtractor(b, plugin_config_naive);
+					Map<String, String> plugin_config_log = new HashMap<String, String>(); 
 					plan.addExtractor(c, plugin_config_log);
 				}
 	 
@@ -961,13 +967,14 @@ public class PredictionServer implements Container {
 			
 			final Query query = request.getQuery();
 			String requestID = "", jsonString = "", typeString = "";
-						
+			String currentTimeStamp = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+			String requesterName = "KF";
 			
 			try
 			{		
 				if( query != null ){
 					requestID = (String) query.get("requestID");
-					jsonString = (String) query.get("jsonString");
+					jsonString = preprocessRawString((String) query.get("jsonString"));
 					// if(query.get("typeString")==null)
 					// 	typeString = "";
 					// else				
@@ -1014,7 +1021,8 @@ public class PredictionServer implements Container {
 						// if(allAnnotations.get(s)!=null)
 						// if(s.equalsIgnoreCase("all_type"))
 						// 	continue;
-						logger.info("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
+						//logger.info("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
+						System.out.println("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
 						if(!s.equalsIgnoreCase(predictedLabel)&&!s.equalsIgnoreCase("PredictedTestData")&&key1.equalsIgnoreCase(""))
 							key1 = s;
 
@@ -1055,14 +1063,23 @@ public class PredictionServer implements Container {
 
 					logger.info("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
 					logger.info("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
+					
+					System.out.println("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
+					System.out.println("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
+					
 					rJson = new ResponseJson(requestID, predicted.get(0).toUpperCase(), level.get(0), jsonStr, key1, key2, key1Str.get(0), key2Str.get(0));
-
+					
 				}
 				// insufficient data
 				// two criteria: # of words < 3
 				else {
 					rJson = new ResponseJson(requestID, "Insufficient Data", "", jsonStr, "", "", "", "");
 				}
+				rJson.setRequestTimestamp(currentTimeStamp);
+				rJson.setRequesterName(requesterName);
+				rJson.setNoteText(jsonStr);
+				rJson.setNoteID(requestID); // noteID???
+				rJson.setFeedbackTextByPredicted(rJson.getPredicted());
 			}
 			catch(Exception e)
 			{
@@ -1081,6 +1098,10 @@ public class PredictionServer implements Container {
 			// Workbench.getRecipeManager().addRecipe(trainedModel);
 			
 			return rJson;
+	}
+	
+	private void writeToDB(ResponseJson rj) {
+		
 	}
 
 	protected String preprocessRawString(String jsonStr) throws IOException {

@@ -17,8 +17,6 @@ import javax.swing.JScrollPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import com.sun.media.jfxmedia.logging.Logger;
-
 import se.datadosen.component.RiverLayout;
 import edu.cmu.side.Workbench;
 import edu.cmu.side.control.BuildModelControl;

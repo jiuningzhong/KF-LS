@@ -111,7 +111,7 @@ public class PredictionServer implements Container {
 		SocketAddress address = new InetSocketAddress(port);
 
 		connection.connect(address);
-		logger.setLevel(Level.OFF);
+		logger.setLevel(Level.INFO);
 		logger.info("Started server on port " + port + ".");
 		
 		fileTxt = new FileHandler("Logging.txt");
@@ -327,7 +327,7 @@ public class PredictionServer implements Container {
 				+ "<form action=\"predicttest\" method=\"post\" enctype=\"multipart/form-data\">"
 				+ "Document File: <input type=\"file\" name=\"inputfile\"><br>"
 				+ "Request ID: <input type=\"text\" name=\"requestID\" value=\"123456\"> "
-				+ "JSON Request: <input type=\"text\" name=\"jsonStr\" value=\"\"> "
+				+ "JSON Request: <input type=\"text\" name=\"jsonString\" value=\"\"> "
 				+ "Complexity type: <input type=\"text\" name=\"Complexity_type\" value=\"\"> "
 				+"<select name=\"prediction_column\">"
 				//+"<option value=\"Q: Questioning\">Q: Questioning</option>"
@@ -972,24 +972,27 @@ public class PredictionServer implements Container {
 			
 			try
 			{		
-				if( query != null ){
-					requestID = (String) query.get("requestID");
-					jsonString = preprocessRawString((String) query.get("jsonString"));
+				if( query != null ){		
+					
+					requestID = request.getPart("requestID").getContent();
+
+					logger.info("requestID: " + requestID);
+					logger.info("JSON: " + request.getPart("jsonString").getContent());	
+					jsonString = preprocessRawString(request.getPart("jsonString").getContent());	
+					//jsonString = request.getPart("jsonStr").getContent();
 					// if(query.get("typeString")==null)
 					// 	typeString = "";
 					// else				
-					// 	typeString = (String) query.get("typeString");				
-					logger.info("query requestID: " + requestID);
-					logger.info("query JSON: " + jsonString);		
+					// 	typeString = (String) query.get("typeString");	
 					//logger.info("query Complexity_type: " + typeString);
 				}
 	
 				if( request.getPart("requestID") != null ){
-					requestID = request.getPart("requestID").getContent();				
-					logger.info("requestID: " + requestID);
+					requestID = request.getPart("requestID").getContent();
 					//jsonString = request.getPart("jsonStr").getContent();
-					jsonString = preprocessRawString(request.getPart("jsonStr").getContent());
-	
+					jsonString = preprocessRawString(request.getPart("jsonString").getContent());
+
+					logger.info("requestID: " + requestID);	
 					logger.info("JSON: " + jsonString);				
 					// typeString = request.getPart("Complexity_type").getContent();
 					// logger.info("Complexity_type: " + typeString);
@@ -1077,7 +1080,7 @@ public class PredictionServer implements Container {
 				}
 				rJson.setRequestTimestamp(currentTimeStamp);
 				rJson.setRequesterName(requesterName);
-				rJson.setNoteText(jsonStr);
+				rJson.setNoteText(jsonString);
 				rJson.setNoteID(requestID); // noteID???
 				rJson.setFeedbackTextByPredicted(rJson.getPredicted());
 			}
@@ -1309,7 +1312,7 @@ public class PredictionServer implements Container {
 		}
 
 		// initSIDE();
-		int port = 8000;
+		int port = 9098;
 
 		int start = 0;
 		if (args.length > 0 && !args[0].contains(":")) {
@@ -1334,7 +1337,7 @@ public class PredictionServer implements Container {
 			logger.info("Warning: no models attached yet. Use http://localhost:" + port + "/uploadinput");
 		}
 
-		serve(port, 5);
+		serve(port, 100);
 
 	}
 

@@ -967,7 +967,7 @@ public class PredictionServer implements Container {
 			
 			final Query query = request.getQuery();
 			String requestID = "", jsonString = "", typeString = "";
-			String currentTimeStamp = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+			String currentTimeStamp = new SimpleDateFormat("MM-dd-yyyy").format(new Date());
 			String requesterName = "KF";
 			
 			try

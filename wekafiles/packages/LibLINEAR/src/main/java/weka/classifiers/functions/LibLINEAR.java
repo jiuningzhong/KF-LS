@@ -682,7 +682,7 @@ public class LibLINEAR extends AbstractClassifier implements TechnicalInformatio
         m_Weight = new double[tok.countTokens()];
         m_WeightLabel = new int[tok.countTokens()];
 
-        if (m_Weight.length == 0) System.out.println("Zero Weights processed. Default weights will be used");
+        //if (m_Weight.length == 0) System.out.println("Zero Weights processed. Default weights will be used");
 
         for (int i = 0; i < m_Weight.length; i++) {
             m_Weight[i] = Double.parseDouble(tok.nextToken());

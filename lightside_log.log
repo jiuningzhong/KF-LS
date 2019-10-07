@@ -10939,4 +10939,1347 @@ Zero Weights processed. Default weights will be used
 Zero Weights processed. Default weights will be used
 Zero Weights processed. Default weights will be used
 Zero Weights processed. Default weights will be used
-^C
+^CSat 10/05/2019 22:14:25.48
+Oct 05, 2019 10:14:30 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Oct 05, 2019 10:14:30 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/Jiuning/Documents/Python%20Scripts/LightSideWB/lib/slf4j-log4j12-1.7.26.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/Jiuning/Documents/Python%20Scripts/LightSideWB/lib/slf4j-simple-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (edu.stanford.nlp.tagger.maxent.MaxentTagger).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Oct 05, 2019 10:17:13 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:35:18 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:36:01 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+all annotations 
+question_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:38:04 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+java.lang.NullPointerException
+	plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.view.generic.GenericMetricChecklistPanel$1.actionPerformed(GenericMetricChecklistPanel.java:60)
+	javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	javax.swing.JComboBox.setSelectedIndex(JComboBox.java:622)
+	edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:168)
+	edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:146)
+	edu.cmu.side.view.generic.GenericMetricChecklistPanel.refreshPanel(GenericMetricChecklistPanel.java:95)
+	edu.cmu.side.view.explore.ExploreMetricChecklistPanel.refreshPanel(ExploreMetricChecklistPanel.java:41)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.view.explore.ExploreResultsPane$1.setHighlight(ExploreResultsPane.java:29)
+	edu.cmu.side.view.generic.GenericLoadPanel$1.actionPerformed(GenericLoadPanel.java:82)
+	javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	edu.cmu.side.view.generic.GenericLoadPanel.refreshPanel(GenericLoadPanel.java:240)
+	edu.cmu.side.view.explore.ExploreResultsPane$1.refreshPanel(ExploreResultsPane.java:43)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.control.BuildModelControl$BuildModelTask.finishTask(BuildModelControl.java:318)
+	edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	java.awt.EventQueue.access$500(EventQueue.java:97)
+	java.awt.EventQueue$3.run(EventQueue.java:709)
+	java.awt.EventQueue$3.run(EventQueue.java:703)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+	at plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	at plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	at plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	at plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	at edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	at edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	at edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.view.generic.GenericMetricChecklistPanel$1.actionPerformed(GenericMetricChecklistPanel.java:60)
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:622)
+	at edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:168)
+	at edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:146)
+	at edu.cmu.side.view.generic.GenericMetricChecklistPanel.refreshPanel(GenericMetricChecklistPanel.java:95)
+	at edu.cmu.side.view.explore.ExploreMetricChecklistPanel.refreshPanel(ExploreMetricChecklistPanel.java:41)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.view.explore.ExploreResultsPane$1.setHighlight(ExploreResultsPane.java:29)
+	at edu.cmu.side.view.generic.GenericLoadPanel$1.actionPerformed(GenericLoadPanel.java:82)
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	at edu.cmu.side.view.generic.GenericLoadPanel.refreshPanel(GenericLoadPanel.java:240)
+	at edu.cmu.side.view.explore.ExploreResultsPane$1.refreshPanel(ExploreResultsPane.java:43)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.control.BuildModelControl$BuildModelTask.finishTask(BuildModelControl.java:318)
+	at edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	at javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	at sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+java.lang.NullPointerException
+	plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.view.generic.ActionBarTask.finishTask(ActionBarTask.java:54)
+	edu.cmu.side.view.generic.GenericFeatureMetricPanel$EvaluateFeaturesTask.finishTask(GenericFeatureMetricPanel.java:237)
+	edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	java.awt.EventQueue.access$500(EventQueue.java:97)
+	java.awt.EventQueue$3.run(EventQueue.java:709)
+	java.awt.EventQueue$3.run(EventQueue.java:703)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	java.awt.Dialog.show(Dialog.java:1084)
+	javax.swing.JOptionPane.showOptionDialog(JOptionPane.java:869)
+	javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:666)
+	javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:637)
+	edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:21)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+	at plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	at plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	at plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	at plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	at edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	at edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	at edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.view.generic.ActionBarTask.finishTask(ActionBarTask.java:54)
+	at edu.cmu.side.view.generic.GenericFeatureMetricPanel$EvaluateFeaturesTask.finishTask(GenericFeatureMetricPanel.java:237)
+	at edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	at javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	at sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.awt.Dialog.show(Dialog.java:1084)
+	at javax.swing.JOptionPane.showOptionDialog(JOptionPane.java:869)
+	at javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:666)
+	at javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:637)
+	at edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:21)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+java.lang.NullPointerException
+	plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.view.generic.ActionBarTask.finishTask(ActionBarTask.java:54)
+	edu.cmu.side.view.generic.GenericFeatureMetricPanel$EvaluateFeaturesTask.finishTask(GenericFeatureMetricPanel.java:237)
+	edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	java.awt.EventQueue.access$500(EventQueue.java:97)
+	java.awt.EventQueue$3.run(EventQueue.java:709)
+	java.awt.EventQueue$3.run(EventQueue.java:703)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	java.awt.Dialog.show(Dialog.java:1084)
+	javax.swing.JOptionPane.showOptionDialog(JOptionPane.java:869)
+	javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:666)
+	javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:637)
+	edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:21)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+	at plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	at plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	at plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	at plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	at edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	at edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	at edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.view.generic.ActionBarTask.finishTask(ActionBarTask.java:54)
+	at edu.cmu.side.view.generic.GenericFeatureMetricPanel$EvaluateFeaturesTask.finishTask(GenericFeatureMetricPanel.java:237)
+	at edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	at javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	at sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.awt.Dialog.show(Dialog.java:1084)
+	at javax.swing.JOptionPane.showOptionDialog(JOptionPane.java:869)
+	at javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:666)
+	at javax.swing.JOptionPane.showMessageDialog(JOptionPane.java:637)
+	at edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:21)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+java.lang.NullPointerException
+	plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.view.generic.GenericMetricChecklistPanel$1.actionPerformed(GenericMetricChecklistPanel.java:60)
+	javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	javax.swing.JComboBox.setSelectedIndex(JComboBox.java:622)
+	edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:168)
+	edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:146)
+	edu.cmu.side.view.generic.GenericMetricChecklistPanel.refreshPanel(GenericMetricChecklistPanel.java:95)
+	edu.cmu.side.view.explore.ExploreMetricChecklistPanel.refreshPanel(ExploreMetricChecklistPanel.java:41)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.view.explore.ExploreResultsPane$1.setHighlight(ExploreResultsPane.java:29)
+	edu.cmu.side.view.generic.GenericLoadPanel$1.actionPerformed(GenericLoadPanel.java:82)
+	javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	edu.cmu.side.view.generic.GenericLoadPanel.refreshPanel(GenericLoadPanel.java:240)
+	edu.cmu.side.view.explore.ExploreResultsPane$1.refreshPanel(ExploreResultsPane.java:43)
+	edu.cmu.side.Workbench.update(Workbench.java:127)
+	edu.cmu.side.control.BuildModelControl$BuildModelTask.finishTask(BuildModelControl.java:318)
+	edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	java.awt.EventQueue.access$500(EventQueue.java:97)
+	java.awt.EventQueue$3.run(EventQueue.java:709)
+	java.awt.EventQueue$3.run(EventQueue.java:703)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+	at plugins.analysis.one.display.DocumentsDisplay$1.getCellHighlights(DocumentsDisplay.java:97)
+	at plugins.analysis.one.display.DocumentsDisplay$1.updateHighlights(DocumentsDisplay.java:36)
+	at plugins.analysis.one.display.DocumentsDisplay.refreshPanel(DocumentsDisplay.java:191)
+	at plugins.analysis.one.display.DocumentsDisplay.getConfigurationUIForSubclass(DocumentsDisplay.java:201)
+	at edu.cmu.side.plugin.SIDEPlugin.getConfigurationUI(SIDEPlugin.java:128)
+	at edu.cmu.side.view.generic.GenericPluginConfigPanel.refreshPanel(GenericPluginConfigPanel.java:45)
+	at edu.cmu.side.view.explore.ExploreResultsPane$2.refreshPanel(ExploreResultsPane.java:69)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.view.generic.GenericMetricChecklistPanel$1.actionPerformed(GenericMetricChecklistPanel.java:60)
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:622)
+	at edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:168)
+	at edu.cmu.side.Workbench.reloadComboBoxContent(Workbench.java:146)
+	at edu.cmu.side.view.generic.GenericMetricChecklistPanel.refreshPanel(GenericMetricChecklistPanel.java:95)
+	at edu.cmu.side.view.explore.ExploreMetricChecklistPanel.refreshPanel(ExploreMetricChecklistPanel.java:41)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.view.explore.ExploreResultsPane$1.setHighlight(ExploreResultsPane.java:29)
+	at edu.cmu.side.view.generic.GenericLoadPanel$1.actionPerformed(GenericLoadPanel.java:82)
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1258)
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:586)
+	at edu.cmu.side.view.generic.GenericLoadPanel.refreshPanel(GenericLoadPanel.java:240)
+	at edu.cmu.side.view.explore.ExploreResultsPane$1.refreshPanel(ExploreResultsPane.java:43)
+	at edu.cmu.side.Workbench.update(Workbench.java:127)
+	at edu.cmu.side.control.BuildModelControl$BuildModelTask.finishTask(BuildModelControl.java:318)
+	at edu.cmu.side.view.generic.ActionBarTask.done(ActionBarTask.java:84)
+	at javax.swing.SwingWorker$5.run(SwingWorker.java:737)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832)
+	at sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at edu.cmu.side.view.util.EventQueueProxy.dispatchEvent(EventQueueProxy.java:12)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+all annotations 
+resource_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Sat 10/05/2019 22:38:30.64
+Oct 05, 2019 10:38:35 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Oct 05, 2019 10:38:35 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+all annotations 
+resource_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/Jiuning/Documents/Python%20Scripts/LightSideWB/lib/slf4j-log4j12-1.7.26.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/Jiuning/Documents/Python%20Scripts/LightSideWB/lib/slf4j-simple-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (edu.stanford.nlp.tagger.maxent.MaxentTagger).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Oct 05, 2019 10:39:27 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:39:46 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:41:08 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:41:30 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:42:28 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:43:20 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:46:38 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+all annotations 
+resource_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:47:34 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+all annotations 
+question_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:48:04 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:48:28 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:49:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:49:23 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+all annotations 
+all_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:50:33 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	all_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+all annotations 
+resource_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:51:14 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	resource_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+all annotations 
+question_type
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:51:40 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	question_type
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:52:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:52:39 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+viewing text columns
+text
+annot selecetedClass 	Complexity_level
+all annotations 
+Complexity_level
+plug output name 	basic
+plan get extractor string /t{Bigrams=true, Contains Non-Stopwords=true, Count Occurences=true, Ignore All-stopword N-Grams=true, Include Punctuation=true, Line Length=true, Normalize N-Gram Counts=true, POS Bigrams=true, POS Trigrams=true, Skip Stopwords in N-Grams=true, Stem N-Grams=true, Track Feature Hit Location=false, Trigrams=true, Unigrams=true, Word/POS Pairs=true}
+Oct 05, 2019 10:53:01 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used
+Zero Weights processed. Default weights will be used

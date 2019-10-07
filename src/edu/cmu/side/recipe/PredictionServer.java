@@ -111,7 +111,7 @@ public class PredictionServer implements Container {
 		SocketAddress address = new InetSocketAddress(port);
 
 		connection.connect(address);
-		logger.setLevel(Level.INFO);
+		logger.setLevel(Level.OFF);
 		logger.info("Started server on port " + port + ".");
 		
 		fileTxt = new FileHandler("Logging.txt");
@@ -709,7 +709,7 @@ public class PredictionServer implements Container {
 		ObjectMapper objectMapper = new ObjectMapper();
 		ResponseJson rj = classifyPrediction(request, response, annot);	
 
-		if(!rj.getPredicted().equalsIgnoreCase("Insufficient Data")){
+		if(!rj.getPredicted().equalsIgnoreCase("L-IS")){
 			ResponseJson rsj  = classifyPrediction(request, response, rj.getPredicted());
 
 			ResponseJson rsjXT = null;
@@ -749,6 +749,7 @@ public class PredictionServer implements Container {
 				writeToDB(rsjXT);
 			}
 		}else{
+			//Insufficient Data
 			jsonStr = objectMapper.writeValueAsString(rj);
 			writeToDB(rj);
 		}
@@ -782,7 +783,7 @@ public class PredictionServer implements Container {
 		else if(annot.equalsIgnoreCase("all_type"))
 		{
 			//0.6288659793814433
-			train_file="Train_three_types.csv";
+			train_file="Train_all_types.csv";
 			predictedLabel = "all_type";
 			annot="all_type";
 		}
@@ -1005,8 +1006,22 @@ public class PredictionServer implements Container {
 				
 				// json string must either be a url
 				// or sentence has >= three words
-				if( (jsonString.contains(" ")&&jsonString.split(" ").length>2)
-					|| (!jsonString.contains(" ")&&jsonString.contains("http")) ) {
+				if( jsonString.equalsIgnoreCase("    i need to understand  --") 
+				|| jsonString.equalsIgnoreCase("    my theory  - test-") 
+				|| jsonString.equalsIgnoreCase("    my theory  --") 
+				|| jsonString.equalsIgnoreCase("    putting our knowledge together  - i know that the anthills-") 
+				|| jsonString.equalsIgnoreCase("    this theory cannot explain  - why animals-") 
+				|| jsonString.equalsIgnoreCase("I agree with you too") 
+				|| jsonString.equalsIgnoreCase("i dont know") 
+				|| jsonString.equalsIgnoreCase("so dark") 
+				|| jsonString.equalsIgnoreCase("testing this")){
+					// Insufficient data. Please write more.
+					rJson = new ResponseJson(requestID, "L-IS", "", jsonStr, "", "", "", "");
+					rJson.setFeedbackTextByPredicted("Insufficient data. Please write more.");
+				} else //if( 
+				//	|| (jsonString.contains(" ")&&jsonString.split(" ").length>2)
+				//	(!jsonString.contains(" ")&&jsonString.contains("http")) ) 
+				{
 					originalDocs = new DocumentList(annot, jsonString, typeString);
 					
 					originalDocs.setTextColumn("text", true);
@@ -1024,8 +1039,8 @@ public class PredictionServer implements Container {
 						// if(allAnnotations.get(s)!=null)
 						// if(s.equalsIgnoreCase("all_type"))
 						// 	continue;
-						//logger.info("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
-						System.out.println("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
+						logger.info("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
+						//System.out.println("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
 						if(!s.equalsIgnoreCase(predictedLabel)&&!s.equalsIgnoreCase("PredictedTestData")&&key1.equalsIgnoreCase(""))
 							key1 = s;
 
@@ -1067,22 +1082,19 @@ public class PredictionServer implements Container {
 					logger.info("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
 					logger.info("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
 					
-					System.out.println("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
-					System.out.println("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
+					//System.out.println("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
+					//System.out.println("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
 					
 					rJson = new ResponseJson(requestID, predicted.get(0).toUpperCase(), level.get(0), jsonStr, key1, key2, key1Str.get(0), key2Str.get(0));
 					
+					rJson.setFeedbackTextByPredicted(rJson.getPredicted());
 				}
 				// insufficient data
 				// two criteria: # of words < 3
-				else {
-					rJson = new ResponseJson(requestID, "Insufficient Data", "", jsonStr, "", "", "", "");
-				}
 				rJson.setRequestTimestamp(currentTimeStamp);
 				rJson.setRequesterName(requesterName);
 				rJson.setNoteText(jsonString);
 				rJson.setNoteID(requestID); // noteID???
-				rJson.setFeedbackTextByPredicted(rJson.getPredicted());
 			}
 			catch(Exception e)
 			{
@@ -1091,10 +1103,10 @@ public class PredictionServer implements Container {
 				ex = e;				
 			}
 			
-			if(newDocs.getSize()!=0)
-			{
-				answer="Success";
-			}
+			// if(newDocs.getSize()!=0)
+			// {
+			// 	answer="Success";
+			// }
 			
 			Workbench.getRecipeManager().deleteRecipe(trainedModel);
 			// trainedModel.setDocumentList(newDocs);

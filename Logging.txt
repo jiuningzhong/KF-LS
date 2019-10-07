@@ -1,294 +1,259 @@
-Oct 02, 2019 9:17:44 PM edu.cmu.side.recipe.PredictionServer handleRequest
-INFO: GET: /predicttest
-Oct 02, 2019 9:17:46 PM edu.cmu.side.recipe.PredictionServer handleRequest
+Oct 06, 2019 11:07:03 PM edu.cmu.side.recipe.PredictionServer handleRequest
 INFO: POST: /predicttest
-Oct 02, 2019 9:17:47 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: annot: all_type
-Oct 02, 2019 9:17:47 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: predictedLabel: all_type
-Oct 02, 2019 9:17:47 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: algo: logistic
-Oct 02, 2019 9:17:47 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Training file dir: C:\Users\Jiuning\Documents\Python Scripts\LightSideWB\testData/Train_three_types.csv
-Oct 02, 2019 9:17:47 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: Training file dir: C:\Users\Jiuning\Documents\Python Scripts\LightSideWB\testData/Train_all_types.csv
+Oct 06, 2019 11:07:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: Completed process of load file
-Oct 02, 2019 9:17:54 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: size of hits127528
-Oct 02, 2019 9:17:54 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Number of features extracted:3516
-Oct 02, 2019 9:17:54 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:13 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: size of hits205499
+Oct 06, 2019 11:07:14 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: Number of features extracted:5369
+Oct 06, 2019 11:07:14 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: Created Feature Extraction!!
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: foldMethod value: AUTO
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: numFolds value: 10
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: source value: RANDOM
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: test value: true
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: BuildModelControl KEY: testRecipe value: Train_three_types.csv
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: BuildModelControl KEY: testSet value: edu.cmu.side.model.data.DocumentList@4b4c8b37
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: BuildModelControl KEY: testRecipe value: Train_all_types.csv
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: BuildModelControl KEY: testSet value: edu.cmu.side.model.data.DocumentList@f207162
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: type value: CV
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: training table size:997
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: training table size:1545
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Training new model.
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: here!
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: size of learner settings:2
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: {foldMethod=AUTO, numFolds=10, source=RANDOM, test=true, testRecipe=Train_three_types.csv, testSet=edu.cmu.side.model.data.DocumentList@4b4c8b37, type=CV}
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: edu.cmu.side.model.OrderedPluginMap@7e3254c8
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: {foldMethod=AUTO, numFolds=10, source=RANDOM, test=true, testRecipe=Train_all_types.csv, testSet=edu.cmu.side.model.data.DocumentList@f207162, type=CV}
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: edu.cmu.side.model.OrderedPluginMap@471c9bd6
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: learner:Logistic Regression
-Oct 02, 2019 9:17:58 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:17 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: updater:edu.cmu.side.view.util.ParallelTaskUpdater[,0,0,0x0,invalid,layout=se.datadosen.component.RiverLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=200,height=20],preferredSize=]
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: trained size:997
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:25 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: trained size:1545
+Oct 06, 2019 11:07:25 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Fetched Results successfully
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: confusion matrix key set: 3
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: Text Confusion Matrix:      L-I L-Q L-R
- L-I 770   0   1
- L-Q 142  25   0
- L-R  38   1  20
+Oct 06, 2019 11:07:25 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: confusion matrix key set: 4
+Oct 06, 2019 11:07:25 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: Text Confusion Matrix:      L-IL-IS L-Q L-R
+ L-I1138   0   0   1
+L-IS   8   0   1   0
+ L-Q 226   0  70   1
+ L-R  69   0   1  30
 
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: Evaluation: 997
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:07:25 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: Evaluation: 1545
+Oct 06, 2019 11:07:25 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Model Evaluation Matrix
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: {Accuracy=0.8174523570712137, Kappa=0.29113439436201555, }
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: 0.8174523570712137
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: {Accuracy=0.801294498381877, Kappa=0.34227239572788704, }
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: 0.801294498381877
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: requestID: 123456
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: JSON: The northern lights happen when the sun makes tiny bits of electricity go down to earth
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: JSON: I agree with you too
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: requestID: 123456
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: JSON: the northern lights happen when the sun makes tiny bits of electricity go down to earth
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: JSON: i agree with you too
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: annot: all_type
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: recipelist size: 1
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
-INFO: Feature Density Mean: 1.0227272727272727
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
-INFO: Feature Density Deviation: 0.0
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Predicted Label1: PredictedTestData_L-I Predicted Label1: PredictedTestData_L-Q
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Predicted Label1 likelihood: 0.8517152011688519 Predicted Label2 likelihood: 0.1171983933681809
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: annot: Complexity_level
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: predictedLabel: Complexity_level
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
+INFO: json: {"requestID":"123456","predicted":"L-IS","level":"","accuracy":"0.801294498381877","key1":"","key2":"","predictionConfidence1":"","predictionConfidence2":"","requesterName":"KF","requestTimestamp":"10-06-2019","noteText":"i agree with you too","noteID":"123456","feedbackText":"Insufficient Data"}
+Oct 06, 2019 11:07:26 PM edu.cmu.side.recipe.PredictionServer handleRequest
+INFO: response isOK
+Oct 06, 2019 11:07:37 PM edu.cmu.side.recipe.PredictionServer handleRequest
+INFO: GET: /predicttest
+Oct 06, 2019 11:08:05 PM edu.cmu.side.recipe.PredictionServer handleRequest
+INFO: POST: /predicttest
+Oct 06, 2019 11:08:05 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: annot: all_type
+Oct 06, 2019 11:08:05 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: predictedLabel: all_type
+Oct 06, 2019 11:08:05 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: algo: logistic
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Training file dir: C:\Users\Jiuning\Documents\Python Scripts\LightSideWB\testData/Train_KF2.csv
-Oct 02, 2019 9:18:03 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:06 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: Training file dir: C:\Users\Jiuning\Documents\Python Scripts\LightSideWB\testData/Train_all_types.csv
+Oct 06, 2019 11:08:06 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: Completed process of load file
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: size of hits103965
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Number of features extracted:2970
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:11 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: size of hits205499
+Oct 06, 2019 11:08:12 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: Number of features extracted:5369
+Oct 06, 2019 11:08:12 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: Created Feature Extraction!!
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:12 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: foldMethod value: AUTO
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:12 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: numFolds value: 10
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: source value: RANDOM
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: test value: true
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: BuildModelControl KEY: testRecipe value: Train_KF2.csv
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: BuildModelControl KEY: testSet value: edu.cmu.side.model.data.DocumentList@35d2b984
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: BuildModelControl KEY: testRecipe value: Train_all_types.csv
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: BuildModelControl KEY: testSet value: edu.cmu.side.model.data.DocumentList@e589492
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: type value: CV
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: training table size:771
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: training table size:1545
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Training new model.
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: here!
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: size of learner settings:2
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: {foldMethod=AUTO, numFolds=10, source=RANDOM, test=true, testRecipe=Train_KF2.csv, testSet=edu.cmu.side.model.data.DocumentList@35d2b984, type=CV}
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: edu.cmu.side.model.OrderedPluginMap@1137d312
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: {foldMethod=AUTO, numFolds=10, source=RANDOM, test=true, testRecipe=Train_all_types.csv, testSet=edu.cmu.side.model.data.DocumentList@e589492, type=CV}
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: edu.cmu.side.model.OrderedPluginMap@6c68e5ab
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: learner:Logistic Regression
-Oct 02, 2019 9:18:05 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:13 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: updater:edu.cmu.side.view.util.ParallelTaskUpdater[,0,0,0x0,invalid,layout=se.datadosen.component.RiverLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=200,height=20],preferredSize=]
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: trained size:771
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: trained size:1545
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Fetched Results successfully
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: confusion matrix key set: 2
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: Text Confusion Matrix:      L-T L-X
- L-T 359  62
- L-X 140 210
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: confusion matrix key set: 4
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: Text Confusion Matrix:      L-IL-IS L-Q L-R
+ L-I1138   0   0   1
+L-IS   8   0   1   0
+ L-Q 226   0  70   1
+ L-R  69   0   1  30
 
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: Evaluation: 771
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: Evaluation: 1545
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Model Evaluation Matrix
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: {Accuracy=0.7380025940337225, Kappa=0.4614022589413547, }
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: 0.7380025940337225
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: {Accuracy=0.801294498381877, Kappa=0.34227239572788704, }
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: 0.801294498381877
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: requestID: 123456
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: JSON: The northern lights happen when the sun makes tiny bits of electricity go down to earth
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: JSON: [    Putting our knowledge together  - i know that the anthills- ]
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: requestID: 123456
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: JSON: the northern lights happen when the sun makes tiny bits of electricity go down to earth
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: annot: Complexity_level
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: JSON:     putting our knowledge together  - i know that the anthills-
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: annot: all_type
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: recipelist size: 1
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
-INFO: Feature Density Mean: 1.0227272727272727
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
-INFO: Feature Density Deviation: 0.0
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Predicted Label1: PredictedTestData_L-T Predicted Label1: PredictedTestData_L-X
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Predicted Label1 likelihood: 0.49343430509320585 Predicted Label2 likelihood: 0.5065656949067942
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: annot: Complexity_level
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: predictedLabel: Complexity_level
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
+INFO: json: {"requestID":"123456","predicted":"L-IS","level":"","accuracy":"0.801294498381877","key1":"","key2":"","predictionConfidence1":"","predictionConfidence2":"","requesterName":"KF","requestTimestamp":"10-06-2019","noteText":"    putting our knowledge together  - i know that the anthills-","noteID":"123456","feedbackText":"Insufficient Data"}
+Oct 06, 2019 11:08:21 PM edu.cmu.side.recipe.PredictionServer handleRequest
+INFO: response isOK
+Oct 06, 2019 11:08:25 PM edu.cmu.side.recipe.PredictionServer handleRequest
+INFO: GET: /predicttest
+Oct 06, 2019 11:08:50 PM edu.cmu.side.recipe.PredictionServer handleRequest
+INFO: POST: /predicttest
+Oct 06, 2019 11:08:50 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: annot: all_type
+Oct 06, 2019 11:08:50 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: predictedLabel: all_type
+Oct 06, 2019 11:08:50 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: algo: logistic
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Training file dir: C:\Users\Jiuning\Documents\Python Scripts\LightSideWB\testData/Train_KF_X.csv
-Oct 02, 2019 9:18:07 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:50 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: Training file dir: C:\Users\Jiuning\Documents\Python Scripts\LightSideWB\testData/Train_all_types.csv
+Oct 06, 2019 11:08:50 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: Completed process of load file
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: size of hits58502
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Number of features extracted:1772
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:08:54 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: size of hits205499
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: Number of features extracted:5369
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: Created Feature Extraction!!
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: foldMethod value: AUTO
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: numFolds value: 10
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: source value: RANDOM
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: test value: true
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: BuildModelControl KEY: testRecipe value: Train_KF_X.csv
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: BuildModelControl KEY: testSet value: edu.cmu.side.model.data.DocumentList@27bcf10
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: BuildModelControl KEY: testRecipe value: Train_all_types.csv
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: BuildModelControl KEY: testSet value: edu.cmu.side.model.data.DocumentList@26d17116
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: BuildModelControl KEY: type value: CV
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: training table size:350
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: training table size:1545
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Training new model.
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: here!
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: size of learner settings:2
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: {foldMethod=AUTO, numFolds=10, source=RANDOM, test=true, testRecipe=Train_KF_X.csv, testSet=edu.cmu.side.model.data.DocumentList@27bcf10, type=CV}
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: edu.cmu.side.model.OrderedPluginMap@3ccaacb0
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: {foldMethod=AUTO, numFolds=10, source=RANDOM, test=true, testRecipe=Train_all_types.csv, testSet=edu.cmu.side.model.data.DocumentList@26d17116, type=CV}
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: edu.cmu.side.model.OrderedPluginMap@2e4cab09
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: learner:Logistic Regression
-Oct 02, 2019 9:18:08 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:08:56 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: updater:edu.cmu.side.view.util.ParallelTaskUpdater[,0,0,0x0,invalid,layout=se.datadosen.component.RiverLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=200,height=20],preferredSize=]
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: trained size:350
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: trained size:1545
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Fetched Results successfully
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: confusion matrix key set: 2
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: Text Confusion Matrix:      L-EL-EE
- L-E 212  15
-L-EE  74  49
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: confusion matrix key set: 4
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: Text Confusion Matrix:      L-IL-IS L-Q L-R
+ L-I1138   0   0   1
+L-IS   8   0   1   0
+ L-Q 226   0  70   1
+ L-R  69   0   1  30
 
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: Evaluation: 350
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: Evaluation: 1545
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
 INFO: Model Evaluation Matrix
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
-INFO: {Accuracy=0.7457142857142857, Kappa=0.3733150927453426, }
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: 0.7457142857142857
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleBuildModel
+INFO: {Accuracy=0.801294498381877, Kappa=0.34227239572788704, }
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: 0.801294498381877
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: requestID: 123456
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: JSON: The northern lights happen when the sun makes tiny bits of electricity go down to earth
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: JSON: [    This theory cannot explain  - why animals- ]
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: requestID: 123456
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: JSON: the northern lights happen when the sun makes tiny bits of electricity go down to earth
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: annot: Complexity_level
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: JSON:     this theory cannot explain  - why animals-
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
+INFO: annot: all_type
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
 INFO: recipelist size: 1
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
-INFO: Feature Density Mean: 1.0227272727272727
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
-INFO: Feature Density Deviation: 0.0
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Predicted Label1: PredictedTestData_L-E Predicted Label1: PredictedTestData_L-EE
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer classifyPrediction
-INFO: Predicted Label1 likelihood: 0.8335385912343921 Predicted Label2 likelihood: 0.1664614087656079
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: --- Start Prediction of all_type---
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Accuracy:   0.8174523570712137
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Level: 		
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Prediction: L-I
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: --- End	  Prediction of all_type---
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: --- Start Prediction of L-X---
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Accuracy:   0.7380025940337225
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Level: 		
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Prediction: L-X
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: --- End	  Prediction of L-X---
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: --- Start Prediction of L-E---
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Accuracy:   0.7457142857142857
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Level: 		
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: Prediction: L-E
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: --- End	  Prediction of L-E---
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
-INFO: json: {"requestID":"123456","predicted":"L-E","level":"","accuracy":"0.7457142857142857","key1":"PredictedTestData_L-E","key2":"PredictedTestData_L-EE","predictionConfidence1":"0.8335385912343921","predictionConfidence2":"0.1664614087656079","requesterName":"KF","requestTimestamp":"02-10-2019","noteText":"the northern lights happen when the sun makes tiny bits of electricity go down to earth","noteID":"123456","feedbackText":""}
-Oct 02, 2019 9:18:09 PM edu.cmu.side.recipe.PredictionServer handleRequest
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleTestPredict
+INFO: json: {"requestID":"123456","predicted":"L-IS","level":"","accuracy":"0.801294498381877","key1":"","key2":"","predictionConfidence1":"","predictionConfidence2":"","requesterName":"KF","requestTimestamp":"10-06-2019","noteText":"    this theory cannot explain  - why animals-","noteID":"123456","feedbackText":"Insufficient Data"}
+Oct 06, 2019 11:09:04 PM edu.cmu.side.recipe.PredictionServer handleRequest
 INFO: response isOK

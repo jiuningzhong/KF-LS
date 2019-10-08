@@ -1088,7 +1088,7 @@ public class PredictionServer implements Container {
 				// two criteria: # of words < 3
 				rJson.setRequestTimestamp(currentTimeStamp);
 				rJson.setRequesterName(requestorName);
-				rJson.setNoteText(jsonString);
+				rJson.setNoteText(getFeedbackText(rJson.getPredicted()));
 				rJson.setNoteID(requestID); // noteID???
 			}
 			catch(Exception e)
@@ -1108,6 +1108,34 @@ public class PredictionServer implements Container {
 			// Workbench.getRecipeManager().addRecipe(trainedModel);
 			
 			return rJson;
+	}
+
+	protected String getFeedbackText(String predicted){
+		String feedbackText = "";
+		if("L-RF".equalsIgnoreCase(predicted)){
+			feedbackText = "Thanks for sharing this resource. \n" + 
+					"-Can you say more? Why is this resource useful for our knowledge building?";
+		}else if("L-RS".equalsIgnoreCase(predicted)){
+			feedbackText = "Thank you for sharing this piece of our puzzle. Keep thinking and posting!";
+		}else if("L-QF".equalsIgnoreCase(predicted)){
+			feedbackText = "Good start with your wondering!\n" + 
+					"-Can you say more about your question or thought?";
+		}else if("L-QS".equalsIgnoreCase(predicted)){
+			feedbackText = "Good job! Keep researching and sharing your ideas!";
+		}else if("L-F".equalsIgnoreCase(predicted)){
+			feedbackText = "You are sharing some interesting information.  \n" + 
+					"-Can you add more details or say more about what this means?";
+		}else if("L-EF".equalsIgnoreCase(predicted)){
+			feedbackText = "Thanks for sharing this interesting information.  \n" + 
+					"-Can you explain how this exactly works, and why?";
+		}else if("L-E".equalsIgnoreCase(predicted)){
+			feedbackText = "This looks like an interesting idea. \n" + 
+					"-	Can you say more?";
+		}else if("L-EE".equalsIgnoreCase(predicted)){
+			feedbackText = "Good job!  This looks like a great note! Encourage your peers to read it. Think about what you need to further research.";
+		}
+		
+		return feedbackText;
 	}
 	
 	private void writeToDB(ResponseJson rj) {

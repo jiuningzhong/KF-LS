@@ -328,14 +328,8 @@ public class PredictionServer implements Container {
 				+ "Document File: <input type=\"file\" name=\"inputfile\"><br>"
 				+ "Request ID: <input type=\"text\" name=\"requestID\" value=\"123456\"> "
 				+ "JSON Request: <input type=\"text\" name=\"jsonString\" value=\"\"> "
-				+ "Complexity type: <input type=\"text\" name=\"Complexity_type\" value=\"\"> "
-				+"<select name=\"prediction_column\">"
-				//+"<option value=\"Q: Questioning\">Q: Questioning</option>"
-				//+"<option value=\"T: Theorizing/explaining\">T: Theorizing/explaining</option>"
-				//+ "<option value=\"E: Evidence\">E: Evidence</option>"
-				//+ "<option value=\"R: Referencing  sources\">R: Referencing  sources</option>"
-				+ "<option value=\"Complexity_level\">Complexity_level</option>"
-				+ "</select><br>"
+				+ "Requestor: <input type=\"text\" name=\"requestorName\" value=\"\"> "
+				+ "<br>"
 				+ "<input type=\"submit\" name=\"Submit\" value=\"Upload File for Extraction\">" + "</form>" + "</body>";
 	}	
 	
@@ -969,17 +963,18 @@ public class PredictionServer implements Container {
 			final Query query = request.getQuery();
 			String requestID = "", jsonString = "", typeString = "";
 			String currentTimeStamp = new SimpleDateFormat("MM-dd-yyyy").format(new Date());
-			String requesterName = "KF";
+			String requestorName = "KF";
 			
 			try
 			{		
-				if( query != null ){		
+				if( query != null && query.get("jsonString") != null){		
 					
-					requestID = request.getPart("requestID").getContent();
+					requestID = (String) query.get("requestID");
+					jsonString = preprocessRawString((String) query.get("jsonString"));
+					requestorName = (String) query.get("requestorName");	
 
 					logger.info("requestID: " + requestID);
-					logger.info("JSON: " + request.getPart("jsonString").getContent());	
-					jsonString = preprocessRawString(request.getPart("jsonString").getContent());	
+					logger.info("JSON: " + jsonString);	
 					//jsonString = request.getPart("jsonStr").getContent();
 					// if(query.get("typeString")==null)
 					// 	typeString = "";
@@ -990,8 +985,8 @@ public class PredictionServer implements Container {
 	
 				if( request.getPart("requestID") != null ){
 					requestID = request.getPart("requestID").getContent();
-					//jsonString = request.getPart("jsonStr").getContent();
 					jsonString = preprocessRawString(request.getPart("jsonString").getContent());
+					requestorName = request.getPart("requestorName").getContent();	
 
 					logger.info("requestID: " + requestID);	
 					logger.info("JSON: " + jsonString);				
@@ -1092,7 +1087,7 @@ public class PredictionServer implements Container {
 				// insufficient data
 				// two criteria: # of words < 3
 				rJson.setRequestTimestamp(currentTimeStamp);
-				rJson.setRequesterName(requesterName);
+				rJson.setRequesterName(requestorName);
 				rJson.setNoteText(jsonString);
 				rJson.setNoteID(requestID); // noteID???
 			}

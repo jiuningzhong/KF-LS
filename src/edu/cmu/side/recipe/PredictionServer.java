@@ -1012,7 +1012,6 @@ public class PredictionServer implements Container {
 				|| jsonString.equalsIgnoreCase("testing this")){
 					// Insufficient data. Please write more.
 					rJson = new ResponseJson(requestID, "L-IS", "", jsonStr, "", "", "", "");
-					rJson.setFeedbackTextByPredicted("Insufficient data. Please write more.");
 				} else //if( 
 				//	|| (jsonString.contains(" ")&&jsonString.split(" ").length>2)
 				//	(!jsonString.contains(" ")&&jsonString.contains("http")) ) 
@@ -1082,13 +1081,13 @@ public class PredictionServer implements Container {
 					
 					rJson = new ResponseJson(requestID, predicted.get(0).toUpperCase(), level.get(0), jsonStr, key1, key2, key1Str.get(0), key2Str.get(0));
 					
-					rJson.setFeedbackTextByPredicted(rJson.getPredicted());
 				}
 				// insufficient data
 				// two criteria: # of words < 3
+				rJson.setFeedbackTextByPredicted(rJson.getPredicted());
 				rJson.setRequestTimestamp(currentTimeStamp);
 				rJson.setRequesterName(requestorName);
-				rJson.setNoteText(getFeedbackText(rJson.getPredicted()));
+				rJson.setNoteText(jsonString);
 				rJson.setNoteID(requestID); // noteID???
 			}
 			catch(Exception e)
@@ -1112,6 +1111,7 @@ public class PredictionServer implements Container {
 
 	protected String getFeedbackText(String predicted){
 		String feedbackText = "";
+		System.out.println("Predicted: " + predicted);
 		if("L-RF".equalsIgnoreCase(predicted)){
 			feedbackText = "Thanks for sharing this resource. \n" + 
 					"-Can you say more? Why is this resource useful for our knowledge building?";
@@ -1134,6 +1134,8 @@ public class PredictionServer implements Container {
 		}else if("L-EE".equalsIgnoreCase(predicted)){
 			feedbackText = "Good job!  This looks like a great note! Encourage your peers to read it. Think about what you need to further research.";
 		}
+		System.out.println("Predicted: " + predicted);
+		System.out.println("feedbackText: " + feedbackText);
 		
 		return feedbackText;
 	}

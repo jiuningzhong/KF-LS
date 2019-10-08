@@ -70,37 +70,42 @@ public class ResponseJson implements Serializable {
 			this.feedbackText = "";
 			break;
 		case "L-RF":
-			this.feedbackText = "";
+			this.feedbackText = "Thanks for sharing this resource. \n" + 
+			"-Can you say more? Why is this resource useful for our knowledge building?";
 			break;
 		case "L-RS":
-			this.feedbackText = "";
+			this.feedbackText = "Thank you for sharing this piece of our puzzle. Keep thinking and posting!";
 			break;
 		case "L-Q":
 			this.feedbackText = "";
 			break;
 		case "L-QF":
-			this.feedbackText = "";
+			this.feedbackText = "Good start with your wondering!\n" + 
+			"-Can you say more about your question or thought?";
 			break;
 		case "L-QS":
-			this.feedbackText = "";
+			this.feedbackText = "Good job! Keep researching and sharing your ideas!";
 			break;
 		case "L-I":
 			this.feedbackText = "";
 			break;
 		case "L-F":
-			this.feedbackText = "";
+			this.feedbackText = "You are sharing some interesting information.  \n" + 
+			"-Can you add more details or say more about what this means?";
 			break;
 		case "L-EF":
-			this.feedbackText = "";
+			this.feedbackText = "Thanks for sharing this interesting information.  \n" + 
+			"-Can you explain how this exactly works, and why?";
 			break;
 		case "L-E":
-			this.feedbackText = "";
+			this.feedbackText = "This looks like an interesting idea. \n" + 
+			"-	Can you say more?";
 			break;
 		case "L-EE":
-			this.feedbackText = "";
+			this.feedbackText = "Good job!  This looks like a great note! Encourage your peers to read it. Think about what you need to further research.";
 			break;
 		default:
-			this.feedbackText = "Insufficient Data";
+			this.feedbackText = "Insufficient data. Please write more.";
 		}
 	}
 

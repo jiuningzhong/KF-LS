@@ -11,10 +11,10 @@ elif [ `uname` == "Linux" ]; then
     OS_ARGS="-Dswing.defaultlaf=javax.swing.plaf.metal.MetalLookAndFeel"
 fi
 
-if [[ -z "$1" ]]; then
-    echo 'no DISPLAY variable set. Using DISPLAY=:0.0...' 
-    export DISPLAY=:0.0
-fi
+#if [[ -z "$1" ]]; then
+#    echo 'no DISPLAY variable set. Using DISPLAY=:0.0...' 
+#    export DISPLAY=:0.0
+#fi
 
 #MAIN_CLASS="edu.cmu.side.Workbench"
 MAIN_CLASS="edu.cmu.side.recipe.PredictionServer"

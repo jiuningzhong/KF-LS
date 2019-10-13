@@ -79,7 +79,7 @@ public class Predictor
 	public Predictor(Map<String, String> params) throws IOException, FileNotFoundException
 	{
 
-		if (!isQuiet()) logger.info(params.toString());
+		if (!isQuiet()) logger.fine(params.toString());
 
 		this.modelPath = params.get("path");
 		this.predictionAnnotation = params.get("prediction");
@@ -143,8 +143,8 @@ public class Predictor
 
 			if (!isQuiet())
 			{
-				logger.info(predictTable.getFeatureSet().size() + " features total");
-				logger.info(predictTable.getHitsForDocument(0).size() + " feature hits in document 0");
+				logger.fine(predictTable.getFeatureSet().size() + " features total");
+				logger.fine(predictTable.getHitsForDocument(0).size() + " feature hits in document 0");
 			}
 			calculatePredictionStats(predictTable);
 
@@ -214,8 +214,8 @@ public class Predictor
 			lengthStats.addValue(wordLength);
 		}
 
-		logger.info("Feature Density Mean: " + densityStats.getMean());
-		logger.info("Feature Density Deviation: " + densityStats.getStandardDeviation());
+		logger.fine("Feature Density Mean: " + densityStats.getMean());
+		logger.fine("Feature Density Deviation: " + densityStats.getStandardDeviation());
 		//
 	}
 
@@ -231,16 +231,16 @@ public class Predictor
 			Chef.quiet = isQuiet();
 			Long when = System.currentTimeMillis();
 			Recipe newRecipe = Chef.followRecipe(recipe, corpus, Stage.MODIFIED_TABLE, 0);
-			System.out.println("followRecipe took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
+			logger.fine("followRecipe took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
 
 			when = System.currentTimeMillis();
 			FeatureTable predictTable = newRecipe.getTrainingTable();
-			System.out.println("getTrainingTable took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
+			logger.fine("getTrainingTable took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
 
 			if (!isQuiet())
 			{
-				logger.info(predictTable.getFeatureSet().size() + " features total");
-				logger.info(predictTable.getHitsForDocument(0).size() + " feature hits in document 0");
+				logger.fine(predictTable.getFeatureSet().size() + " features total");
+				logger.fine(predictTable.getHitsForDocument(0).size() + " feature hits in document 0");
 			}
 
 			result = predictFromTable(predictTable);
@@ -261,17 +261,17 @@ public class Predictor
 
 		if (!isQuiet())
 		{
-			logger.info(predictTable.getHitsForDocument(0).size() + " feature hits in document 0 after reconciliation");
-			logger.info(predictTable.getFeatureSet().size() + " features total");
+			logger.fine(predictTable.getHitsForDocument(0).size() + " feature hits in document 0 after reconciliation");
+			logger.fine(predictTable.getFeatureSet().size() + " features total");
 		}
 
 		Long when = System.currentTimeMillis();
 		LearningPlugin lp = recipe.getLearner();
-		System.out.println("getLearner() took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
+		logger.fine("getLearner() took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
 
 		when = System.currentTimeMillis();
 		result = lp.predict(trainingTable, predictTable, recipe.getLearnerSettings(), textUpdater, recipe.getWrappers());
-		System.out.println("learner.predict took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
+		logger.fine("learner.predict took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
 
 		return result;
 	}
@@ -368,7 +368,7 @@ public class Predictor
 
 		try
 		{
-		logger.info("loading predictor from " + modelPath);
+		logger.fine("loading predictor from " + modelPath);
 		Predictor predictor = new Predictor(modelPath, annotation);
 
 		if (args.length > 2)
@@ -378,16 +378,16 @@ public class Predictor
 			corpusFiles.add(args[2]);
 			
 			Charset encoding = Charset.forName(args[1]);
-			logger.info("loading docs from " + corpusFiles);
+			logger.fine("loading docs from " + corpusFiles);
 			DocumentList docs = ImportController.makeDocumentList(corpusFiles, encoding);
 
-			logger.info("predicting...");
+			logger.fine("predicting...");
 			PredictionResult predicted = predictor.predict(docs);
 			
 			if(args.length > 3)
 			{
 				String outputFilename = args[3];
-				logger.info("saving prediction results to "+outputFilename);
+				logger.fine("saving prediction results to "+outputFilename);
 				docs = Predictor.addPredictionsToDocumentList("predicted", false, false, predicted, docs);
 				DocumentListTableModel docTable = new DocumentListTableModel(docs);
 				docTable.setDocumentList(docs);
@@ -400,7 +400,7 @@ public class Predictor
 				for (int i = 0; i < docs.getSize(); i++)
 				{
 					String text = docs.getPrintableTextAt(i);
-	//				logger.info(predictions.get(i) + "\t" + text.substring(0, Math.min(100, text.length())));
+	//				logger.fine(predictions.get(i) + "\t" + text.substring(0, Math.min(100, text.length())));
 					actualOut.println(i+"\t"+predictions.get(i) + "\t" + text.substring(0, Math.min(100, text.length())));
 				}
 			}
@@ -414,7 +414,7 @@ public class Predictor
 				String sentence = input.nextLine();
 				String answer = predictor.prettyPredict(sentence);
 				actualOut.println(answer);
-//				logger.info(answer + "\t" + sentence.substring(0, Math.min(sentence.length(), 100)));
+//				logger.fine(answer + "\t" + sentence.substring(0, Math.min(sentence.length(), 100)));
 			}
 		}
 
@@ -433,11 +433,11 @@ public class Predictor
 
 	public static void printUsage()
 	{
-		System.out.println("Usage: ./scripts/predict.sh path/to/saved/model.xml [{data-encoding} path/to/unlabeled/data.csv [path/to/output/file.csv]]");
-		System.out.println("Outputs tab-separated predictions for new instances, using the given model.");
-		System.out.println("If no new data file is given, instances are read from the standard input.");
-		System.out.println("Common data encodings are UTF-8, windows-1252, and MacRoman.");
-		System.out.println("Make sure that the text columns and any columns used as features have the same names in the new data as they did in the training set.)");
+		logger.fine("Usage: ./scripts/predict.sh path/to/saved/model.xml [{data-encoding} path/to/unlabeled/data.csv [path/to/output/file.csv]]");
+		logger.fine("Outputs tab-separated predictions for new instances, using the given model.");
+		logger.fine("If no new data file is given, instances are read from the standard input.");
+		logger.fine("Common data encodings are UTF-8, windows-1252, and MacRoman.");
+		logger.fine("Make sure that the text columns and any columns used as features have the same names in the new data as they did in the training set.)");
 	}
 
 	public boolean isQuiet()

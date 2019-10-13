@@ -111,8 +111,8 @@ public class PredictionServer implements Container {
 		SocketAddress address = new InetSocketAddress(port);
 
 		connection.connect(address);
-		logger.setLevel(Level.OFF);
-		logger.info("Started server on port " + port + ".");
+		logger.setLevel(Level.INFO);
+		logger.fine("Started server on port " + port + ".");
 		
 		fileTxt = new FileHandler("Logging.txt", true);
         fileHTML = new FileHandler("Logging.html", true);
@@ -147,7 +147,7 @@ public class PredictionServer implements Container {
 			long time = System.currentTimeMillis();
 
 			String target = request.getTarget();
-			logger.info(request.getMethod() + ": " + target);
+			logger.fine(request.getMethod() + ": " + target);
 
 			String answer = null;
 
@@ -181,7 +181,7 @@ public class PredictionServer implements Container {
 						response.setValue("Accuracy",answer);
 						response.setDescription(answer);
 						response.setDescription("OK");
-						logger.info("response is"+response.getDescription());
+						logger.fine("response is"+response.getDescription());
 					}
 						
 				} else {
@@ -200,7 +200,7 @@ public class PredictionServer implements Container {
 						response.setValue("Accuracy",answer);
 						response.setDescription(answer);
 						response.setDescription("OK");
-						logger.info("response is"+response.getDescription());
+						logger.fine("response is"+response.getDescription());
 					}
 						
 				} else {
@@ -269,7 +269,7 @@ public class PredictionServer implements Container {
 			int code = response.getCode();
 			if (code != 200) {
 				body.println("HTTP Code " + code);
-				logger.info("HTTP Code " + code);
+				logger.fine("HTTP Code " + code);
 			}
 
 			body.close();
@@ -452,7 +452,7 @@ public class PredictionServer implements Container {
 		d.setTextColumn("text", true);
 		Workbench.update(RecipeManager.Stage.DOCUMENT_LIST);
 		
-	    logger.info("Completed process of load file");
+	    logger.fine("Completed process of load file");
 	    
 		RecipeManager rp=Workbench.getRecipeManager();
 		Recipe plan=Workbench.recipeManager.fetchDocumentListRecipe(d);
@@ -530,7 +530,7 @@ public class PredictionServer implements Container {
 				}
 
 			} 
-			logger.info("size of hits"+hits.size());
+			logger.fine("size of hits"+hits.size());
 			if (!halt)
 			{
 				update.update("Building Feature Table");
@@ -547,10 +547,10 @@ public class PredictionServer implements Container {
 		}
 	
 		Collection<Feature> features=plan.getFeatureTable().getSortedFeatures();
-		logger.info("Number of features extracted:"+ features.size());
-		logger.info("Created Feature Extraction!!");
+		logger.fine("Number of features extracted:"+ features.size());
+		logger.fine("Created Feature Extraction!!");
 		String s = handleBuildModel(plan,algo);
-		logger.info(s);
+		logger.fine(s);
 		//deleting the saved file
 		File f= new File(destpath+"/"+filename);
 		//f.delete();
@@ -602,51 +602,51 @@ public class PredictionServer implements Container {
 		Map<String, Serializable> valSetting = BuildModelControl.getValidationSettings();
 		
 		for(String s:valSetting.keySet()) {
-			logger.info("BuildModelControl KEY: " + s + " value: " + valSetting.get(s));
+			logger.fine("BuildModelControl KEY: " + s + " value: " + valSetting.get(s));
 		}
 		
 		try
 		{
 			FeatureTable current = plan.getTrainingTable();
-			logger.info("training table size:"+current.getSize());
+			logger.fine("training table size:"+current.getSize());
 			if (current != null)
 			{
 				TrainingResult results = null;
 				if (results == null)
 				{
-					logger.info("Training new model.");
-					logger.info("here!");
-					logger.info("size of learner settings:"+plan.getLearnerSettings().size());
+					logger.fine("Training new model.");
+					logger.fine("here!");
+					logger.fine("size of learner settings:"+plan.getLearnerSettings().size());
 					
-					logger.info(BuildModelControl.getValidationSettings().toString());
-					logger.info(plan.getWrappers().toString());
-					logger.info("learner:"+plan.getLearner());
-					logger.info("updater:"+BuildModelControl.getUpdater());
+					logger.fine(BuildModelControl.getValidationSettings().toString());
+					logger.fine(plan.getWrappers().toString());
+					logger.fine("learner:"+plan.getLearner());
+					logger.fine("updater:"+BuildModelControl.getUpdater());
 					results = plan.getLearner().train(current, plan.getLearnerSettings(), BuildModelControl.getValidationSettings(), plan.getWrappers(),
 							BuildModelControl.getUpdater());
-					logger.info("trained size:"+results.getTrainingTable().getSize());
+					logger.fine("trained size:"+results.getTrainingTable().getSize());
 				}
 
 				if (results != null)
 				{
-					logger.info("Fetched Results successfully");
+					logger.fine("Fetched Results successfully");
 					plan.setTrainingResult(results);
 					results.setName("BuiltModel");
 
 					plan.setLearnerSettings(plan.getLearner().generateConfigurationSettings());
 					plan.setValidationSettings(new TreeMap<String, Serializable>(BuildModelControl.getValidationSettings()));
-					logger.info("confusion matrix key set: "+results.getConfusionMatrix().keySet().size());
-					logger.info("Text Confusion Matrix: " + results.getTextConfusionMatrix());
-					logger.info("Evaluation: "+results.getEvaluationTable().getSize());
+					logger.fine("confusion matrix key set: "+results.getConfusionMatrix().keySet().size());
+					logger.fine("Text Confusion Matrix: " + results.getTextConfusionMatrix());
+					logger.fine("Evaluation: "+results.getEvaluationTable().getSize());
 					Map<String, String> allKeys = new TreeMap<String, String>();
 
 					//  Map<String, List<Double>> distributions = results.getDistributions();
 					//  List<Double> values = new ArrayList<Double>();
 					//  for(String s:distributions.keySet()){
-					//  	logger.info("Key: " + s);
+					//  	logger.fine("Key: " + s);
 					//  	values = distributions.get(s);
 					//  	for(Double dis:values){
-					//  		logger.info("Key: " + s + " Prediction: " + dis);
+					//  		logger.fine("Key: " + s + " Prediction: " + dis);
 					//  	}
 					//  }
 
@@ -667,7 +667,7 @@ public class PredictionServer implements Container {
 							allKeys.putAll(evaluations);
 						}			
 						
-					logger.info("Model Evaluation Matrix");
+					logger.fine("Model Evaluation Matrix");
 					StringBuilder mapAsString = new StringBuilder("{");
 					
 					for (String key : allKeys.keySet()) {
@@ -680,13 +680,13 @@ public class PredictionServer implements Container {
 
 					mapAsString.append("}");
 
-					logger.info(mapAsString.toString());				
+					logger.fine(mapAsString.toString());				
 				}
 			}
 		}
 		catch (Exception e)
 		{
-			logger.info(e.getMessage());
+			logger.fine(e.getMessage());
 			plan = null;
 			
 		}		
@@ -711,21 +711,21 @@ public class PredictionServer implements Container {
 			if(rsj.getPredicted().equalsIgnoreCase("L-X")||rsj.getPredicted().equalsIgnoreCase("L-T"))
 				rsjXT = classifyPrediction(request, response, rsj.getPredicted());	
 			
-			logger.info("--- Start Prediction of all_type---");
+			logger.fine("--- Start Prediction of all_type---");
 		
-			logger.info("Accuracy:   " + rj.getAccuracy());		
-			logger.info("Level: 		" + rj.getLevel());	
-			logger.info("Prediction: " + rj.getPredicted());
+			logger.fine("Accuracy:   " + rj.getAccuracy());		
+			logger.fine("Level: 		" + rj.getLevel());	
+			logger.fine("Prediction: " + rj.getPredicted());
 			
-			logger.info("--- End	  Prediction of all_type---");	
+			logger.fine("--- End	  Prediction of all_type---");	
 			
-			logger.info("--- Start Prediction of " + rsj.getPredicted() + "---");
+			logger.fine("--- Start Prediction of " + rsj.getPredicted() + "---");
 			
-			logger.info("Accuracy:   " + rsj.getAccuracy());		
-			logger.info("Level: 		" + rsj.getLevel());	
-			logger.info("Prediction: " + rsj.getPredicted());
+			logger.fine("Accuracy:   " + rsj.getAccuracy());		
+			logger.fine("Level: 		" + rsj.getLevel());	
+			logger.fine("Prediction: " + rsj.getPredicted());
 			
-			logger.info("--- End	  Prediction of " + rsj.getPredicted() + "---");
+			logger.fine("--- End	  Prediction of " + rsj.getPredicted() + "---");
 			
 			if(rsjXT==null) {
 				jsonStr = objectMapper.writeValueAsString(rsj);
@@ -734,13 +734,13 @@ public class PredictionServer implements Container {
 			else{
 				jsonStr = objectMapper.writeValueAsString(rsjXT);
 				
-				logger.info("--- Start Prediction of " + rsjXT.getPredicted() + "---");
+				logger.fine("--- Start Prediction of " + rsjXT.getPredicted() + "---");
 				
-				logger.info("Accuracy:   " + rsjXT.getAccuracy());		
-				logger.info("Level: 		" + rsjXT.getLevel());	
-				logger.info("Prediction: " + rsjXT.getPredicted());
+				logger.fine("Accuracy:   " + rsjXT.getAccuracy());		
+				logger.fine("Level: 		" + rsjXT.getLevel());	
+				logger.fine("Prediction: " + rsjXT.getPredicted());
 				
-				logger.info("--- End	  Prediction of " + rsjXT.getPredicted() + "---");
+				logger.fine("--- End	  Prediction of " + rsjXT.getPredicted() + "---");
 				writeToDB(rsjXT);
 			}
 		}else{
@@ -749,6 +749,7 @@ public class PredictionServer implements Container {
 			writeToDB(rj);
 		}
 		logger.info("json: " + jsonStr);
+		logger.fine("json: " + jsonStr);
 		return jsonStr;
 	}
 	
@@ -804,14 +805,14 @@ public class PredictionServer implements Container {
 			annot = "Complexity_level";
 		}
 
-		logger.info("annot: "+annot);
+		logger.fine("annot: "+annot);
 
-		logger.info("predictedLabel: "+predictedLabel);
+		logger.fine("predictedLabel: "+predictedLabel);
 
-		logger.info("algo: "+algo);
+		logger.fine("algo: "+algo);
 		final String destpath = Workbench.dataFolder.getAbsolutePath();
 		File f= new File(destpath+"/"+train_file);
-		logger.info("Training file dir: "+destpath+"/"+train_file);
+		logger.fine("Training file dir: "+destpath+"/"+train_file);
 		Set<String> files = new HashSet<String>();
 			files.add(train_file);
 			//creating a document list and setting all the required parameters for feature extraction
@@ -836,7 +837,7 @@ public class PredictionServer implements Container {
 			d.setTextColumn("text", true);
 			Workbench.update(RecipeManager.Stage.DOCUMENT_LIST);
 			
-		    logger.info("Completed process of load file");
+		    logger.fine("Completed process of load file");
 		    
 			RecipeManager rp=Workbench.getRecipeManager();
 			Recipe plan = Workbench.recipeManager.fetchDocumentListRecipe(d);
@@ -861,7 +862,7 @@ public class PredictionServer implements Container {
 	        	
 	        	if(algo.equalsIgnoreCase("naive"))
 	        	{
-	        		logger.info("path to check json:"+destpath+"/Question.json");
+	        		logger.fine("path to check json:"+destpath+"/Question.json");
 	        		map1 = mapper.readValue(new File(destpath+
 		                    "/Question.json"), new TypeReference<Map<String, Object>>() {
 		            }); 
@@ -925,7 +926,7 @@ public class PredictionServer implements Container {
 					}
 
 				} 
-				logger.info("size of hits"+hits.size());
+				logger.fine("size of hits"+hits.size());
 				if (!halt)
 				{
 					update.update("Building Feature Table");
@@ -942,10 +943,10 @@ public class PredictionServer implements Container {
 			}
 		
 			Collection<Feature> features=plan.getFeatureTable().getSortedFeatures();
-			logger.info("Number of features extracted:"+ features.size());
-			logger.info("Created Feature Extraction!!");
+			logger.fine("Number of features extracted:"+ features.size());
+			logger.fine("Created Feature Extraction!!");
 			jsonStr = handleBuildModel(plan,algo);
-			logger.info(jsonStr);
+			logger.fine(jsonStr);
 			
 			//predict the testing data
 			String answer="";
@@ -974,14 +975,14 @@ public class PredictionServer implements Container {
 					jsonString = preprocessRawString((String) query.get("jsonString"));
 					requestorName = (String) query.get("requestorName");	
 
-					logger.info("requestID: " + requestID);
-					logger.info("JSON: " + jsonString);	
+					logger.fine("requestID: " + requestID);
+					logger.fine("JSON: " + jsonString);	
 					//jsonString = request.getPart("jsonStr").getContent();
 					// if(query.get("typeString")==null)
 					// 	typeString = "";
 					// else				
 					// 	typeString = (String) query.get("typeString");	
-					//logger.info("query Complexity_type: " + typeString);
+					//logger.fine("query Complexity_type: " + typeString);
 				}
 	
 				if( request.getPart("requestID") != null ){
@@ -989,13 +990,13 @@ public class PredictionServer implements Container {
 					jsonString = preprocessRawString(request.getPart("jsonString").getContent());
 					requestorName = request.getPart("requestorName").getContent();	
 
-					logger.info("requestID: " + requestID);	
-					logger.info("JSON: " + jsonString);				
+					logger.fine("requestID: " + requestID);	
+					logger.fine("JSON: " + jsonString);				
 					// typeString = request.getPart("Complexity_type").getContent();
-					// logger.info("Complexity_type: " + typeString);
+					// logger.fine("Complexity_type: " + typeString);
 				}
-				logger.info("annot: " + annot);
-				logger.info("recipelist size: " + recipelist.size());
+				logger.fine("annot: " + annot);
+				logger.fine("recipelist size: " + recipelist.size());
 
 				//creating a document list and setting all the required parameters for feature extraction
 				//originalDocs = new DocumentList(testfiles);
@@ -1034,8 +1035,7 @@ public class PredictionServer implements Container {
 						// if(allAnnotations.get(s)!=null)
 						// if(s.equalsIgnoreCase("all_type"))
 						// 	continue;
-						logger.info("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
-						//System.out.println("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
+						logger.fine("Predicted Label: " + s + " Predicted Label likelihood: " + allAnnotations.get(s).get(0));
 						if(!s.equalsIgnoreCase(predictedLabel)&&!s.equalsIgnoreCase("PredictedTestData")&&key1.equalsIgnoreCase(""))
 							key1 = s;
 
@@ -1074,11 +1074,8 @@ public class PredictionServer implements Container {
 						}
 					}
 
-					logger.info("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
-					logger.info("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
-					
-					//System.out.println("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
-					//System.out.println("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
+					logger.fine("Predicted Label1: "+ key1 + " Predicted Label1: "+key2);
+					logger.fine("Predicted Label1 likelihood: "+allAnnotations.get(key1).get(0) + " Predicted Label2 likelihood: "+allAnnotations.get(key2).get(0));
 					
 					rJson = new ResponseJson(requestID, predicted.get(0).toUpperCase(), level.get(0), jsonStr, key1, key2, key1Str.get(0), key2Str.get(0));
 					
@@ -1093,7 +1090,7 @@ public class PredictionServer implements Container {
 			}
 			catch(Exception e)
 			{
-				logger.info(e.getMessage());
+				logger.fine(e.getMessage());
 				e.printStackTrace();
 				ex = e;				
 			}
@@ -1112,7 +1109,7 @@ public class PredictionServer implements Container {
 
 	protected String getFeedbackText(String predicted){
 		String feedbackText = "";
-		System.out.println("Predicted: " + predicted);
+		
 		if("L-RF".equalsIgnoreCase(predicted)){
 			feedbackText = "Thanks for sharing this resource. \n" + 
 					"-Can you say more? Why is this resource useful for our knowledge building?";
@@ -1135,8 +1132,6 @@ public class PredictionServer implements Container {
 		}else if("L-EE".equalsIgnoreCase(predicted)){
 			feedbackText = "Good job!  This looks like a great note! Encourage your peers to read it. Think about what you need to further research.";
 		}
-		System.out.println("Predicted: " + predicted);
-		System.out.println("feedbackText: " + feedbackText);
 		
 		return feedbackText;
 	}
@@ -1199,15 +1194,15 @@ public class PredictionServer implements Container {
 				return nick + " already exists on this server.";
 			} else {
 				// TODO: authentication?
-				logger.info(f.getAbsolutePath());
+				logger.fine(f.getAbsolutePath());
 				FileChannel fo = new FileOutputStream(f).getChannel();
 				ReadableByteChannel po = Channels.newChannel(part.getInputStream());
 				long transferred = fo.transferFrom(po, 0, Integer.MAX_VALUE);
-				logger.info("wrote " + transferred + " bytes.");
+				logger.fine("wrote " + transferred + " bytes.");
 
 				Long when = System.currentTimeMillis();
 				boolean attached = attachModel(nick, f.getAbsolutePath());
-				logger.info("Attach model took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
+				logger.fine("Attach model took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
 
 				if (attached)
 					return "received " + path + ": " + transferred + " bytes.\nModel attached as /predict/" + nick + "";
@@ -1279,7 +1274,7 @@ public class PredictionServer implements Container {
 		{
 			CSVExporter.exportToCSV(model, recipe.getDocumentList().getName()); 
 		}
-		logger.info("Saved CSV file!");
+		logger.fine("Saved CSV file!");
 		return "Success";
 		
 	}
@@ -1299,9 +1294,9 @@ public class PredictionServer implements Container {
 
 			Long when = System.currentTimeMillis();
 			checkModel(response, model);
-			logger.info("Check model took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
+			logger.fine("Check model took " + (System.currentTimeMillis() - when) / 1000.0 + " seconds");
 
-			logger.info("using model " + model + " on " + instances.size() + " instances...");
+			logger.fine("using model " + model + " on " + instances.size() + " instances...");
 			for (Comparable label : predictors.get(model).predict(instances)) {
 				answer += label + " ";
 			}
@@ -1372,7 +1367,7 @@ public class PredictionServer implements Container {
 		}
 
 		if (predictors.isEmpty()) {
-			logger.info("Warning: no models attached yet. Use http://localhost:" + port + "/uploadinput");
+			logger.fine("Warning: no models attached yet. Use http://localhost:" + port + "/uploadinput");
 		}
 
 		serve(port, 100);
@@ -1383,7 +1378,7 @@ public class PredictionServer implements Container {
 	 * 
 	 */
 	protected static void printUsage() {
-		logger.info("usage: side_server.sh [port] model_nickname:path/to/model.side ...");
+		logger.fine("usage: side_server.sh [port] model_nickname:path/to/model.side ...");
 	}
 
 	/**
@@ -1394,7 +1389,7 @@ public class PredictionServer implements Container {
 	 */
 	protected static boolean attachModel(String nick, String modelPath) {
 		try {
-			logger.info("attaching " + modelPath + " as " + nick);
+			logger.fine("attaching " + modelPath + " as " + nick);
 			Predictor predict = new Predictor(modelPath, "class");
 			predictors.put(nick, predict);
 			return true;

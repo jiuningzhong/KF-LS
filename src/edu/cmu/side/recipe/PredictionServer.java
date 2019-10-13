@@ -114,15 +114,15 @@ public class PredictionServer implements Container {
 		logger.setLevel(Level.OFF);
 		logger.info("Started server on port " + port + ".");
 		
-		fileTxt = new FileHandler("Logging.txt");
-        fileHTML = new FileHandler("Logging.html");
+		fileTxt = new FileHandler("Logging.txt", true);
+        fileHTML = new FileHandler("Logging.html", true);
 
         // create a TXT formatter
         formatterTxt = new SimpleFormatter();
         fileTxt.setFormatter(formatterTxt);
         logger.addHandler(fileTxt);
 
-        // create an HTML formatter
+        // create an HTML formatter	
         formatterHTML = new MyHtmlFormatter();
         fileHTML.setFormatter(formatterHTML);
         logger.addHandler(fileHTML);
@@ -155,7 +155,7 @@ public class PredictionServer implements Container {
 			response.setValue("Server", "HelloWorld/1.0 (Simple 4.0)");
 			response.setValue("Access-Control-Allow-Origin", "*");
 			response.setValue("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-			response.setValue("Access-Control-Allow-Methods", "GET, POST, PUT");
+			response.setValue("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
 			response.setDate("Date", time);
 			response.setDate("Last-Modified", time);
 

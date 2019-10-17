@@ -154,8 +154,8 @@ public class PredictionServer implements Container {
 			//response.setValue("Content-Type", "multipart/form-data");
 			response.setValue("Server", "HelloWorld/1.0 (Simple 4.0)");
 			response.setValue("Access-Control-Allow-Origin", "*");
-			response.setValue("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-			response.setValue("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+			response.setValue("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+			response.setValue("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE, PATCH");
 			response.setDate("Date", time);
 			response.setDate("Last-Modified", time);
 
